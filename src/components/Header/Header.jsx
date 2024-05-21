@@ -4,13 +4,12 @@ import './Header.css'
 import { CiSearch } from "react-icons/ci";
 import { FaShoppingCart } from "react-icons/fa";
 
-
 function Header() {
 
   return (
     <>
       <div className='nav-portion'>
-        <div className='left-part'>_NAME</div>
+        <div className='left-part'>pricepeek</div>
         <div className='middle-part'>
         <NavLink
           to="/"
