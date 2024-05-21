@@ -1,0 +1,41 @@
+.footer-portion{
+    position: absolute;
+    width: 100%;
+    height: 28%;
+    top: 73%;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    background: #000;
+    border-top:2px solid red;
+}
+.first-col,.second-col,.third-col{
+    position: relative;
+    top: 10px;
+}
+h3{
+    font-size: 23px;
+}
+li{
+  font-size: 17px;
+}
+#login-btn,#cart-btn,#about-btn,#contact-btn,#faq-btn{
+    color: #fff;
+    text-decoration: none;
+}
+.social-icons{
+    font-size: 25px;
+    display: flex;
+    margin-top: 13px;
+    gap: 20px;
+}
+#insta-logo{
+    background-color: rgb(236, 34, 111);
+}
+#face-logo{
+    background-color: #f0f0f8;
+}
+#linkedin-logo{
+    background-color: #f0f0f8;
+
+}
