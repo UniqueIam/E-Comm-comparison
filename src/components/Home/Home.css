@@ -1,4 +1,6 @@
 .home-portion{
     position:absolute;
+    /* height: 100%; */
+    background-color:white;
     top: 10%;
 }

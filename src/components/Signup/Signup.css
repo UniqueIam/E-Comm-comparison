@@ -4,6 +4,7 @@
     height: 100%;
     top: 7%;
     background: #000;
+    overflow: hidden;
 }
 #cartImage{
     position: relative;
@@ -15,11 +16,55 @@
 .account-section{
     position: relative;
     left: 50%;
-    top: -50%;
+    top: -54%;
     font-family: sans-serif;
     color: #fff;
 }
 span{
+<<<<<<< HEAD
     color: #D60C0C;
 }
 
+=======
+    color: red;
+}
+#email-field,#name-field,#password-field{
+  background: transparent;
+  border-width: 10px;
+  border-bottom: 2px solid rgb(87, 74, 74);
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+}
+#account{
+    background-color: red;
+    border: none;
+    width: 170px;
+    height: 40px;
+    cursor: pointer;
+    color: #fff;
+}
+.account-already-exist{
+    background-color: #fff;
+    height: 30px;width: 400px;
+}
+#signup-google{
+    position: relative;
+    left: 12px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+}
+#google-icon{
+    margin-top: 1.3px;  
+}
+#login-link{
+    text-decoration: none;
+    color: #967c7c;
+    text-decoration: underline;
+}
+>>>>>>> 8eb720b9a06c51e8d064e35b682c67e9bce111f2
