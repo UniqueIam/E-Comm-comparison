@@ -14,7 +14,7 @@ function Header() {
         <NavLink
           to="/"
            style={({isActive})=>({
-            color:isActive? "red" :"black",
+            color:isActive? "#D60C0C" :"aliceblue",
            })}
            >
            Home
@@ -23,7 +23,7 @@ function Header() {
          <NavLink
           to='/about'
           style={({isActive})=>({
-            color:isActive ?"red":"black", 
+            color:isActive ?"#D60C0C":"aliceblue", 
           })}
          >
           About
@@ -32,7 +32,7 @@ function Header() {
          <NavLink
           to='/contact'
           style={({isActive})=>({
-            color:isActive ?"red":"black", 
+            color:isActive ?"#D60C0C":"aliceblue", 
           })}
          >
           Contact
@@ -41,7 +41,7 @@ function Header() {
          <NavLink
           to='/signup'
           style={({isActive})=>({
-            color:isActive ?"red":"black", 
+            color:isActive ?"#D60C0C":"aliceblue", 
           })}
          >
           Signup

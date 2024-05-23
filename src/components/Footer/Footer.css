@@ -5,9 +5,9 @@
     top: 73%;
     display: flex;
     justify-content: space-around;
-    color: #fff;
-    background: #000;
-    border-top:2px solid red;
+    color: black;
+    background: #D9D9D9;
+    border-top:2px solid rgb(241, 238, 238);
 }
 .first-col,.second-col,.third-col{
     position: relative;
@@ -20,7 +20,7 @@ li{
   font-size: 17px;
 }
 #login-btn,#cart-btn,#about-btn,#contact-btn,#faq-btn{
-    color: #fff;
+    color:black;
     text-decoration: none;
 }
 .social-icons{
