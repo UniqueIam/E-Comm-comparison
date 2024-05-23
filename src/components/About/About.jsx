@@ -5,7 +5,7 @@ function About() {
   return (
     <>
         <div className='about-portion'>
-          About
+          This is my ABout Page
         </div>
         
     </>
