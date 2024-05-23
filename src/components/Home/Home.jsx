@@ -11,9 +11,10 @@ function Home() {
        <div className='categories-section'>
         <button></button>
         <p id='cate'>categories</p>
-        <p id='browse_cate'>Browse By Categories</p>
+        <p id='browse_cate'></p>
        </div>
        </div>
+       
     </>
   )
 }
