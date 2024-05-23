@@ -9,7 +9,7 @@ function Header() {
   return (
     <>
       <div className='nav-portion'>
-        <div className='left-part'>pricepeek</div>
+        <div className='left-part'>PricePeek</div>
         <div className='middle-part'>
         <NavLink
           to="/"

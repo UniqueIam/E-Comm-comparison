@@ -11,9 +11,8 @@
     top: 20px;
     left: 60px;
     width: 450px;
-
 }
-.account-section{
+.account-section-signUp{
     position: relative;
     left: 50%;
     top: -54%;
@@ -25,7 +24,7 @@ span{
 }
 #email-field,#name-field,#password-field{
   background: transparent;
-  border-width: 10px;
+  width: 400px;
   border-bottom: 2px solid rgb(87, 74, 74);
   outline: none;
   color: #fff;
@@ -53,6 +52,7 @@ span{
     font-size: 14px;
     display: flex;
     gap: 10px;
+    width: 500px;
 }
 #google-icon{
     margin-top: 1.3px;  
