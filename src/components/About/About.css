@@ -17,30 +17,40 @@
     margin-left: 5%;
     margin-top: 7%;
 }
-h1{
+h1,h2{
    margin-bottom: 5%; 
    text-transform: capitalize;
+   font-weight: bold;
 }
 .storybx{
     width:42%;
     margin-right: 7%;
-    font-size: 14px;
+    font-size: 16px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .aboutimg{
   width:45%
+}
+.secondhalf{
+  display: block;
+  margin-left: 5%;
+    margin-top: 5%;
+}
+.para{
+  font-size:xx-large;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
 }
 
 /* .wrap{
   width: 500px;
   
 } */
-.secondhalf{
+.cover{
     display: grid;
-    margin-left:10% ;
     position: relative;
-    top:5%;
     grid-template-columns: repeat(2,1fr);
+    column-gap:10%;
 
 }
  
@@ -105,14 +115,14 @@ h1{
     align-items: center;
     font-size:x-large;
     font-weight:bold;
-    left:25%
+    left:30%
 }
 .descr:hover{
 transform: scale(1.01);
 }
 .lasthalf{
   margin-left:5%;
-  margin-top:20%;
+  margin-top:12%;
   display: flex;
 }
 .leftpor{

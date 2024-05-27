@@ -21,20 +21,24 @@ function About() {
             </div>
             <img src='./images/aboutpg.jpg' className='aboutimg'/>
           </div>
-          
-          <div className="secondhalf">
-            <div className='wrap'><Link to='https://www.linkedin.com/in/abhimanyu-kumar-4b6716242'>
-                <div className='abhi'></div>
-                <div className='descr'>Abhimanyu</div></Link>
-            </div>
+
+          <div className='secondhalf'>
+            <h2 className='para'>Developers</h2>
+              <div className="cover">
+                  <div className='wrap'><Link to='https://www.linkedin.com/in/abhimanyu-kumar-4b6716242'>
+                      <div className='abhi'></div>
+                      <div className='descr'>Abhimanyu</div></Link>
+                  </div>
             
-            <div className='wrap'><Link to='https://www.linkedin.com/in/sruti-prusty-995882258'>
-                <div className='sru'></div>
-                 <div className='descr'>Sruti  Prusty</div></Link>
-            </div>
-                  
+                  <div className='wrap'><Link to='https://www.linkedin.com/in/sruti-prusty-995882258'>
+                      <div className='sru'></div>
+                      <div className='descr'>Sruti  Prusty</div></Link>
+                  </div>
+              </div>
                   
           </div>
+
+
           <div className='lasthalf'>
               <div className='leftpor'>
                   <p className='why'>Why choose <br></br> Pricepeek ?</p>
