@@ -19,6 +19,7 @@
 }
 h1{
    margin-bottom: 5%; 
+   text-transform: capitalize;
 }
 .storybx{
     width:42%;
