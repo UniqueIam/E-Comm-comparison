@@ -2,7 +2,7 @@
     position:absolute;
     /* height: 100%; */
     width: 100%;
-    height: 194%;
+    height: 394%;
     background-color: #000;
     top: 7%;  
     color: #fff;
@@ -17,7 +17,7 @@
 }
 .categories-section{
     position: relative;
-    top: 64px;
+    top: 500px;
     left: 85px;
 }
 button{
@@ -42,7 +42,7 @@ button{
 .grid-container{
     position: relative;
     left: 80px;
-    top: 80px;
+    top: 550px;
     /* background-color: yellowgreen; */
     display: grid;
     grid-template-rows: repeat(2,1fr);
@@ -64,13 +64,14 @@ button{
 }
 .grid-item img:hover{
     filter: drop-shadow(
-        20px 20px 10px pink
+        20px 20px 40px pink
     );
 }
 #watch-btn,#shoes-btn,#bags-btn,#dress-btn,#phones-btn,
 #laptops-btn,#headphones-btn,#kids-btn
 {
     position: relative;
+    cursor: pointer;
     left: 64px;
     top: 20px;
     width: 100px;
@@ -78,4 +79,9 @@ button{
     color: #fff;
     font-weight: 500;
     
+}
+.accordion{
+    height: 200px;
+    width: 200px;
+    background-color: #fff;
 }
