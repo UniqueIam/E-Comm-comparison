@@ -1,4 +1,184 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
+
 .about-portion{
     position: absolute;
-    top: 10%;
+    top: 7%;
+    width: 100%;
+    height: 294%;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+   
 }
+
+.firsthalf{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 7%;
+}
+h1{
+   margin-bottom: 5%; 
+}
+.storybx{
+    width:42%;
+    margin-right: 7%;
+    font-size: 14px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.aboutimg{
+  width:45%
+}
+
+/* .wrap{
+  width: 500px;
+  
+} */
+.secondhalf{
+    display: grid;
+    margin-left:10% ;
+    position: relative;
+    top:5%;
+    grid-template-columns: repeat(2,1fr);
+
+}
+ 
+  .abhi, .sru {
+    width: 480px;
+    height: 480px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .abhi {
+    background-image: url(../../../public/images/a1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-mask:url("../../../public/images/g2.png");
+        -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .abhi:hover {
+    transform: scale(1.05);
+    
+  }
+  
+  .sru {
+    background-image: url(../../../public/images/sruti_profPic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-mask:url("../../../public/images/g2.png");
+    -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .sru:hover {
+    transform: scale(1.05);
+  
+  }
+
+ @keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.descr{
+  width:200px;
+  height:30px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  position: relative;
+    color:#d60c06;
+    text-align: center;
+    align-items: center;
+    font-size:x-large;
+    font-weight:bold;
+    left:25%
+}
+.descr:hover{
+transform: scale(1.01);
+}
+.lasthalf{
+  margin-left:5%;
+  margin-top:20%;
+  display: flex;
+}
+.leftpor{
+  width:50%
+}
+.why{
+  font-size: 45px;
+  color: #d60c06;
+  font-style: italic;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.joy{
+   font-size: 60px;
+font-family: 'Redressed',cursive;
+font-style: normal;
+font-weight: 300;
+font-size: 60px;
+line-height: 100px;
+color: #FFFFFF;
+text-shadow: 0px 0px 4px rgba(221, 25, 25, 0.25), 0px 0px 8px rgba(240, 22, 22, 0.356), 0px 0px 12px rgba(211, 1, 1, 0.432);
+  }
+
+  .rightpor{
+    
+    display: grid;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 7%;
+    column-gap: 15%;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+
+  }
+
+.feature {
+  max-width: 250px;
+  text-align: left;
+}
+
+.icon {
+  display: flex;
+  width: 58px;
+  height: 58px;
+  font-size:40px;
+  margin-bottom: 10px;
+  background-color: #d60c06;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+ h3{
+  margin: 0;
+  font-size: 10px;
+  font-style:normal;
+ font-family:Arial, Helvetica, sans-serif;
+ opacity:0.7;
+ 
+ }
+ .fea-p{
+  margin:0;
+  font-size: 15px;
+  margin-top: 5%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: oblique;
+
+ }
+
+ 
