@@ -3,6 +3,8 @@ import { useFirebase } from '../../context/Firebase';
 import './Signup.css'
 import { FaGoogle } from "react-icons/fa";
 import {Link} from 'react-router-dom';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 function SignUp() {
 
@@ -14,6 +16,7 @@ function SignUp() {
 
   return (
    <>
+     <Header />
     <div className='signup-portion'>
       <img src='./images/image1.svg' alt='image' id='cartImage' />
       <div className='account-section-signUp'>
@@ -60,9 +63,14 @@ function SignUp() {
         </button><br/>
        
          <p>Already have account? <span><Link to='/login' id='login-link'> Log in</Link></span></p>
+         
+         <div>
+          <Footer currentPage="signup" />
+        </div>
       </div>
+       
       </div>
-    
+      
    </>
   )
 }

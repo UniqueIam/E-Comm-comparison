@@ -2,12 +2,12 @@
     position:absolute;
     width: 100%;
     height: 28%;
+    top: 400%;
     top: 300%;
     display: flex;
     justify-content: space-around;
     color: #000;
-    background: #918686;
-    /* border-top:2px solid red; */
+    background: #b17272;
     overflow-y: hidden;
 }
 .first-col,.second-col,.third-col{
@@ -20,7 +20,7 @@ h3{
 li{
   font-size: 17px;
 }
-#login-btn,#cart-btn,#about-btn,#contact-btn,#faq-btn{
+#login-btn,#cart-btn,#about-btn,#contact-btn,#faq-btn,#account-btn{
     color: #000;
     font-weight: 400;
     text-decoration: none;
@@ -43,4 +43,12 @@ li{
 #linkedin-logo{
     background-color: #f0f0f8;
 
-}
+} 
+
+
+  .footer-portion{
+    width: 100%;
+    background-color: #666;
+    margin-bottom: 0%;
+   
+  }

@@ -6,14 +6,21 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareTwitter } from "react-icons/fa6";
 
-function Footer() {
-  return (
+const Footer = () =>{
+ 
+ 
+  return(
     <>
-      <div className='footer-portion'>
+    
+        <div className='footer-portion'>
         <div className='first-col'>
         <h3>Account</h3><br/>
         <ul>
-          <li>My Account</li><br/>
+          <li>
+          <Link to='/myAccount' id='account-btn'>
+           My Account
+          </Link>
+          </li><br/>
           <li>
           <Link to='/login' id='login-btn'>
           Login/Register
@@ -61,8 +68,9 @@ function Footer() {
           </Link>
         </div>
       </div>
+      
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

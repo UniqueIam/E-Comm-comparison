@@ -9,18 +9,20 @@ import Cart from './components/Cart/Cart'
 import Signup from './components/Signup/Signup'
 import Login from './components/Login/Login'
 import Layout from './components/Layout'
+import MyAccount from './components/MyAccount/MyAccount'
 import { createBrowserRouter,createRoutesFromElements,Route,RouterProvider } from 'react-router-dom'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='' element={< Layout/>}>
+    <Route path='' element={<Layout />}>
       <Route path='' element={<Home />} />
       <Route path='about' element={<About/>} />
       <Route path='contact' element={<Contact />} />
       <Route path='signup' element={<Signup />} />
       <Route path='cart' element={<Cart />} />
       <Route path='login' element={<Login/>} />
-    </Route>
+      <Route path='myAccount' element={<MyAccount/>} />
+    </Route>  
   )
 )
 
