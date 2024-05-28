@@ -15,11 +15,10 @@
 .account-section-signUp{
     position: relative;
    left: 67%;
-    top: -74%;
+    top:-60%;
     font-family: sans-serif;
     color: #fff;
 }
-
 
 span{
     color: red;
@@ -73,3 +72,4 @@ span{
     top: 10%;
     width: 100%;
 }
+
