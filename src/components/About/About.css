@@ -34,7 +34,7 @@ h1,h2{
 .secondhalf{
   display: block;
   margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 7%;
 }
 .para{
   font-size:xx-large;
@@ -47,6 +47,7 @@ h1,h2{
   
 } */
 .cover{
+  
     display: grid;
     position: relative;
     grid-template-columns: repeat(2,1fr);
@@ -55,8 +56,10 @@ h1,h2{
 }
  
   .abhi, .sru {
+  
     width: 480px;
     height: 480px;
+    top:-10%;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
@@ -115,14 +118,15 @@ h1,h2{
     align-items: center;
     font-size:x-large;
     font-weight:bold;
-    left:30%
+    left:30%;
+    top:-10%
 }
 .descr:hover{
 transform: scale(1.01);
 }
 .lasthalf{
   margin-left:5%;
-  margin-top:12%;
+  margin-top:7%;
   display: flex;
 }
 .leftpor{

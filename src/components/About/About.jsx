@@ -11,7 +11,7 @@ function About() {
         <div className='about-portion'>
           <div className='firsthalf'>
             <div className='storybx'>
-              <h1>Our story</h1>
+              <h1>About Us</h1>
               
               <p>In the vast and ever-growing world of online shopping, navigating through countless websites to find the best deals can be overwhelming. That's where PricePeek comes in, revolutionizing the way savvy shoppers make informed decisions. The platform scans a vast array of e-commerce sites in real-time, compiling and presenting prices, deals, and discounts for a wide range of products. 
                   <br/>
