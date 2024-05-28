@@ -8,8 +8,8 @@
 }
 .account-section-login{
     position: relative;
-    left: 50%;
-    top: -54%;
+    left: 67%;
+    top: -64%;
     /* background-color: #fff; */
     font-family: sans-serif;
     color: #fff;
@@ -24,6 +24,6 @@
 #forgot-pass{
     position: relative;
     top: -25px;
-    left: 270px;
+    left: 220px;
     color: red;
 }

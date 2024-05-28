@@ -10,21 +10,27 @@
     position: relative;
     top: 50px;
     left: 60px;
-    width: 450px;
+    width: 750px;
 }
 .account-section-signUp{
     position: relative;
-    left: 50%;
-    top: -44%;
+   left: 67%;
+    top: -74%;
     font-family: sans-serif;
     color: #fff;
 }
+
+
 span{
     color: red;
 }
+.details{
+    font-size: 12px;
+    
+}
 #email-field,#name-field,#password-field{
   background: transparent;
-  width: 400px;
+  width: 350px;
   border-bottom: 2px solid rgb(87, 74, 74);
   outline: none;
   color: #fff;
