@@ -1,4 +1,15 @@
 .contact-portion{
     position: absolute;
+    top: 7%;
+    background-color:#000;
+    width: 100%;
+    height: 1000px;
+}
+#contact-heading{
+    color: #fff;
+    font-family: sans-serif;
+    position: absolute;
     top: 10%;
+    left: 6%;
+    font-size: 20px;
 }

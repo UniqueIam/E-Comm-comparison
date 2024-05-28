@@ -1,21 +1,21 @@
 .signup-portion{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 120%;
     top: 7%;
     background: #000;
     overflow: hidden;
 }
 #cartImage{
     position: relative;
-    top: 20px;
+    top: 50px;
     left: 60px;
     width: 450px;
 }
 .account-section-signUp{
     position: relative;
     left: 50%;
-    top: -54%;
+    top: -44%;
     font-family: sans-serif;
     color: #fff;
 }
@@ -61,4 +61,9 @@ span{
     text-decoration: none;
     color: #967c7c;
     text-decoration: underline;
+}
+.signup-footer{
+    position: absolute;
+    top: 10%;
+    width: 100%;
 }
