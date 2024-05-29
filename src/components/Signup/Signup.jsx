@@ -16,8 +16,8 @@ function SignUp() {
 
   return (
    <>
-     <Header />
     <div className='signup-portion'>
+    <div className='signpg'>
       <img src='./images/image1.svg' alt='image' id='cartImage' />
       <div className='account-section-signUp'>
         <h2>Create an <span>Account</span></h2><br/>
@@ -64,11 +64,10 @@ function SignUp() {
        
          <p>Already have account? <span><Link to='/login' id='login-link'> Log in</Link></span></p>
          
-         <div>
-          <Footer currentPage="signup" />
-        </div>
+         
       </div>
-       
+    
+      </div>
       </div>
       
    </>

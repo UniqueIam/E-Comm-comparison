@@ -1,15 +1,29 @@
 .contact-portion{
-    position: absolute;
+    position: relative;
     top: 7%;
     background-color:#000;
     width: 100%;
     height: 1000px;
 }
+
 #contact-heading{
     color: #fff;
     font-family: sans-serif;
-    position: absolute;
+    position: relative;
     top: 10%;
     left: 6%;
     font-size: 20px;
+}
+.callus{
+    color: aliceblue; left: 6%;top: 10%;
+    position: relative;
+}
+#call{
+    background-color: red;
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    align-items:center;
+    border-radius: 50%;
+   
 }
