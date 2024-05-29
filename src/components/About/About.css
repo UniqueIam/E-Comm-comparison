@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
 
 .about-portion{
-    position: absolute;
+    position: relative;
     top: 7%;
     width: 100%;
     height: 294%;
