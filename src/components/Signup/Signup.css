@@ -1,29 +1,31 @@
 .signup-portion{
     position:relative;
     width: 100%;
-    height: 120%;
+    height: 140%;
     top: 7%;
     background: #000;
     overflow: hidden;
+    
+}
+
+.signpg{
     display: flex;
-
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
     
 }
-
 #cartImage{
-    position: relative;
-    top: 20%;
-    left: 5%;
-    width: 750px;
+    width:65%;
 }
+
 .account-section-signUp{
-    position: relative;
-    left:10%;
     
+    margin-left:5%;
+    margin-top: 10%;
     font-family: sans-serif;
     color: #fff;
 }
-
 span{
     color: red;
 }
@@ -32,14 +34,15 @@ span{
     
 }
 #email-field,#name-field,#password-field{
-  background: transparent;
-  width: 350px;
-  border-bottom: 2px solid rgb(87, 74, 74);
-  outline: none;
-  color: #fff;
-  font-size: 14px;
-}
-#account{
+    background: transparent;
+    width: 300px;
+    border-bottom: 2px solid rgb(87, 74, 74);
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  #account{
     background-color: red;
     border: none;
     width: 170px;
@@ -51,8 +54,9 @@ span{
     background-color: #fff;
     height: 30px;width: 400px;
 }
+
 #signup-google{
-    position: relative;
+    
     left: 12px;
     background: transparent;
     border: none;
@@ -61,16 +65,28 @@ span{
     font-size: 14px;
     display: flex;
     gap: 10px;
-    width: 500px;
+    width: 200px;
 }
 #google-icon{
     margin-top: 1.3px;  
 }
+
 #login-link{
     text-decoration: none;
     color: #967c7c;
     text-decoration: underline;
+    
 }
+ 
+
+
+
+
+
+
+
+
+ 
 /* .signup-footer{
     position: absolute;
     top: 10%;

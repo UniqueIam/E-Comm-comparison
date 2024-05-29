@@ -1,19 +1,16 @@
 .login-portion{
     position: relative;
     top: 7%;
-    height: 100%;
-    width: 120%;
-    display: flex;
+    height: 140%;
+    width: 100%;
     background: #000;
     overflow: hidden;
 }
 .account-section-login{
-    position: relative;
-    left: 8%;
-    /* background-color: #fff; */
+    margin-left:5%;
+    margin-top: 10%;
     font-family: sans-serif;
     color: #fff;
-    overflow: hidden;
 }
 #login-btn{
 
@@ -22,8 +19,8 @@
     cursor: pointer;
 }
 #forgot-pass{
-    
+    position: relative;
     top: -25px;
-    left: 220px;
+    left: 165px;
     color: red;
 }
