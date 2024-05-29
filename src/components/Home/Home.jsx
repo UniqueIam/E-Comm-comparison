@@ -9,16 +9,19 @@ function Home() {
   return (
     <>
         
-       <div className='home-portion'>
-       <div className='heading'>
-         <h2><span>Discover a pocket full of fashion treasures </span><br/><br/>
+    <div className='home-portion'>
+      <div className='firstprt'>
+        <div className='heading'>
+         <h2><span className='front_des'>Discover a pocket full of fashion treasures </span><br/><br/>
          that won't empty your wallet. </h2>
-       </div>
-      <div className='categories-section'>
-        <button></button>
-        <p id='cate'>categories</p>
-        <p id='browse_cate'>Browse By categories</p>
-       </div>
+        </div>
+      </div>
+      <div className='secndprt'>
+        <div className='categories-section'>
+          <button></button>
+          <p id='cate'>categories</p>
+          <p id='browse_cate'>Browse By categories</p>
+        </div>
         
         <div className='grid-container'>
 
@@ -61,17 +64,18 @@ function Home() {
           <img src='./images/kidswear.jpg' />
            <button id='kids-btn'>Kidswear</button>
           </div>
-           </div>
+        </div>
          
            {/* <div className='accordion'>
           <FAQ />
          </div> */}
-         <div>
-        <Footer currentPage="home" />
-        </div>
-       </div>
+        
+      </div>
+      <div className='view-all'>
+      <button id='all-prod'>view all products</button>
+      </div>
        
-       
+    </div>   
     </>
   )
 }
