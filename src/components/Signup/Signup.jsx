@@ -17,6 +17,51 @@ function SignUp() {
   return (
    <>
     <div className='signup-portion'>
+<<<<<<< HEAD
+      <img src='./images/image1.svg' alt='image' id='cartImage' />
+      <div className='account-section-signUp'>
+        <h2>Create an <span>Account</span></h2>
+        <p>Enter your details below</p><br/><br/>
+        {/* <input 
+          type='text'
+          placeholder='Name'
+          required
+          id='name-field'
+          autoComplete='off'
+        /><br/><br/><br/> */}
+        <input 
+          onChange={e=>(setEmail(e.target.value))}
+          value={email}
+          type='email'
+          placeholder='Enter Your Email '
+          required
+          id='email-field'
+          autoComplete='off'
+        /><br/><br/><br/>
+          <input 
+          onChange={e=>(setPassword(e.target.value))}
+          value={password}
+          type='password'
+          placeholder='Password'
+          required
+          id='password-field'
+         autoComplete='off'
+        /><br/><br/>
+        <button onClick={()=>{
+            firebase.signupUserWithEmailandPassword(email,password)
+            firebase.putData("users/"+"Abhimanyu",{email,password })
+        }} 
+        id='account'>
+        Create Account
+        </button><br/><br/>
+        <button onClick={()=>{
+           firebase.signUpWithGoogle()
+        }} 
+        id='signup-google'>
+        <FaGoogle id='google-icon'/>
+        Sign up with Google
+        </button><br/>
+=======
      <div className='signpg'>
          <img src='./images/image1.svg' alt='image' id='cartImage' />
             <div className='account-section-signUp'>
@@ -61,6 +106,7 @@ function SignUp() {
                      <FaGoogle id='google-icon'/>
                      Sign up with Google
                     </button><br/>
+>>>>>>> 20b040b93b5174054c0d1673b39e66e7e25a23fd
        
                     <p>Already have account? <span><Link to='/login' id='login-link'> Log in</Link></span></p>
          
