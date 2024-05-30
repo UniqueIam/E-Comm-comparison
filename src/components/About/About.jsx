@@ -8,7 +8,6 @@ import { MdUpdate } from 'react-icons/md';
 function About() {
   return (
     <>
- 
         <div className='about-portion'>
           <div className='firsthalf'>
             <div className='storybx'>
