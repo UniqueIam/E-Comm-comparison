@@ -20,20 +20,20 @@ function SignUp() {
     <div className='signup-portion'>
       <img src='./images/image1.svg' alt='image' id='cartImage' />
       <div className='account-section-signUp'>
-        <h3>Create an <span>Account</span></h3><br/>
+        <h2>Create an <span>Account</span></h2>
         <p>Enter your details below</p><br/><br/>
-        <input 
+        {/* <input 
           type='text'
           placeholder='Name'
           required
           id='name-field'
           autoComplete='off'
-        /><br/><br/><br/>
+        /><br/><br/><br/> */}
         <input 
           onChange={e=>(setEmail(e.target.value))}
           value={email}
           type='email'
-          placeholder='Email or Phone Number'
+          placeholder='Enter Your Email '
           required
           id='email-field'
           autoComplete='off'
