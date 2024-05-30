@@ -22,10 +22,11 @@ function Login() {
   return (
     <>
       <div className='login-portion'>
-      <img src='./images/image1.svg' alt='image' id='cartImage' />
+      <div className='signpg'>
+       <img src='./images/image1.svg' alt='image' id='cartImage' />
         <div className='account-section-login'>
-        <h3>Log in to <span> PricePeek</span></h3><br/>
-        <p>Enter your details below</p><br/><br/>
+        <h2>Log in to <span> PricePeek</span></h2><br/>
+        <p className='details'>Enter your details below</p><br/><br/>
         <input 
           onChange={e=>(setEmail(e.target.value))}
           value={email}
@@ -57,6 +58,7 @@ function Login() {
         <p id='forgot-pass'>Forgot Password ?</p>
         </div>
       </div>
+    </div>
     </>
   )
 }
