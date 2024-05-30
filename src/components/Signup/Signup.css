@@ -19,15 +19,9 @@
 }
 
 .account-section-signUp{
-<<<<<<< HEAD
-    position: relative;
-    left: 50%;
-    top: -42%;
-=======
     
     margin-left:5%;
     margin-top: 10%;
->>>>>>> 20b040b93b5174054c0d1673b39e66e7e25a23fd
     font-family: sans-serif;
     color: #fff;
 }
@@ -73,7 +67,7 @@ span{
     width: 200px;
 }
 #google-icon{
-    margin-top: 1.32px;  
+    margin-top: 1.3px;  
 }
 
 #login-link{
