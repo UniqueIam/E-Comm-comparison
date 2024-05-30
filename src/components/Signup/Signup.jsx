@@ -3,8 +3,7 @@ import { useFirebase } from '../../context/Firebase';
 import './Signup.css'
 import { FaGoogle } from "react-icons/fa";
 import {Link} from 'react-router-dom';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+
 
 function SignUp() {
 

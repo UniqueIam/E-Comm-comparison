@@ -25,8 +25,13 @@ function Login() {
       <div className='signpg'>
        <img src='./images/image1.svg' alt='image' id='cartImage' />
         <div className='account-section-login'>
+<<<<<<< HEAD
+        <h2>Log in to <span> PricePeek</span></h2>
+        <p>Enter your details below</p><br/><br/>
+=======
         <h2>Log in to <span> PricePeek</span></h2><br/>
         <p className='details'>Enter your details below</p><br/><br/>
+>>>>>>> 20b040b93b5174054c0d1673b39e66e7e25a23fd
         <input 
           onChange={e=>(setEmail(e.target.value))}
           value={email}
