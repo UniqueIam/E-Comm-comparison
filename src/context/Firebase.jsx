@@ -35,6 +35,7 @@ import {
 
 
     export const FirebaseProvider = (props) =>{
+      const [user,setUser] = useState(null);
 
     const signupUserWithEmailandPassword = (email,password) =>{
         return createUserWithEmailAndPassword(FirebaseAuth,email,password)
@@ -52,11 +53,14 @@ import {
      onAuthStateChanged(FirebaseAuth,(user)=>{
        if(user){
         //user logged in
+        setUser(user);
         
         console.log(`signed in`);
+        
        }
        else{
         //user logged out
+        setUser(null);
         console.log(`sign out`);
        }
      });

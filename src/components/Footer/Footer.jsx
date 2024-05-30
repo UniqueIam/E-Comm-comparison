@@ -14,7 +14,7 @@ const Footer = () =>{
     
         <div className='footer-portion'>
         <div className='first-col'>
-        <h3>Account</h3><br/>
+        <h2>Account</h2><br/>
         <ul>
           <li>
           <Link to='/myAccount' id='account-btn'>
@@ -34,7 +34,7 @@ const Footer = () =>{
         </div>
 
         <div className='second-col'>
-          <h3>Reach out to us</h3>
+          <h2>Reach out to us</h2>
           <div className='social-icons'>
           <Link to='https://www.linkedin.com/in/abhimanyu-kumar-4b6716242'>
           <FaInstagram id='insta-logo'/>
@@ -56,7 +56,7 @@ const Footer = () =>{
         </div>
 
         <div className='third-col'>
-          <h3>Quick Link</h3><br/>
+          <h2>Quick Link</h2><br/>
           <Link to='/about' id='about-btn'>
             About Us
           </Link><br/><br/>
