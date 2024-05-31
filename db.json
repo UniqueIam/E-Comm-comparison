@@ -1,0 +1,7 @@
+{
+  "dresses": [
+    { "id": 1, "name": "Red Dress", "size": "M", "price": 29.99, "image": "url_to_red_dress_image" },
+    { "id": 2, "name": "Blue Dress", "size": "L", "price": 39.99, "image": "url_to_blue_dress_image" },
+    { "id": 3, "name": "Green Dress", "size": "S", "price": 25.99, "image": "url_to_green_dress_image" }
+  ]
+}

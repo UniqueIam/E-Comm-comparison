@@ -7,15 +7,16 @@
     overflow: hidden;
     
 }
-.signpg{
-    display: flex;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-bottom: 5%;
-    
+
+.cart-img{
+ position: relative;
+ top:100px;
+ left: 60px;
 }
+
 #cartImage{
-    width:65%;
+    width:35%;
+    
 }
 
 .account-section-signUp{
@@ -78,17 +79,4 @@ span{
 }
  
 
-
-
-
-
-
-
-
- 
-/* .signup-footer{
-    position: absolute;
-    top: 10%;
-    width: 100%;
-} */
 

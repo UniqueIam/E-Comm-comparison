@@ -16,6 +16,7 @@ function SignUp() {
   return (
    <>
     <div className='signup-portion'>
+
      <div className='signpg'>
          <img src='./images/image1.svg' alt='image' id='cartImage' />
             <div className='account-section-signUp'>
@@ -60,12 +61,13 @@ function SignUp() {
                      <FaGoogle id='google-icon'/>
                      Sign up with Google
                     </button><br/>
+
                     <p>Already have account? <span><Link to='/login' id='login-link'> Log in</Link></span></p>
          
             </div>
     
       </div>
-    </div>
+    
    </>
   )
 }
