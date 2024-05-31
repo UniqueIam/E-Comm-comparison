@@ -6,8 +6,8 @@
     background: #000;
     overflow: hidden;
     
-    
 }
+
 .cart-img{
  position: relative;
  top:100px;
@@ -20,9 +20,9 @@
 }
 
 .account-section-signUp{
-    position: relative;
-    left: 50%;
-    top: -280px;
+    
+    margin-left:5%;
+    margin-top: 10%;
     font-family: sans-serif;
     color: #fff;
 }
@@ -68,7 +68,7 @@ span{
     width: 200px;
 }
 #google-icon{
-    margin-top: 1.3px;  
+    margin-top: 1.31px;  
 }
 
 #login-link{

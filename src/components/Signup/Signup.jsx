@@ -65,7 +65,6 @@ function SignUp() {
        
                     <p>Already have account? <span><Link to='/login' id='login-link'> Log in</Link></span></p>
          
-         
             </div>
     
       </div>
