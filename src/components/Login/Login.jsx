@@ -21,7 +21,6 @@ function Login() {
   }
   return (
     <>
-    
       <div className='login-portion'>
       <div className='signpg'>
        <img src='./images/image1.svg' alt='image' id='cartImage' />
