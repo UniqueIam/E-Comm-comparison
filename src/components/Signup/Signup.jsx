@@ -60,7 +60,6 @@ function SignUp() {
                      <FaGoogle id='google-icon'/>
                      Sign up with Google
                     </button><br/>
-
                     <p>Already have account? <span><Link to='/login' id='login-link'> Log in</Link></span></p>
          
             </div>
