@@ -26,7 +26,7 @@ function Login() {
        <img src='./images/image1.svg' alt='image' id='cartImage' />
         <div className='account-section-login'>
         <h2>Log in to <span> PricePeek</span></h2>
-        <p>Enter your details below</p><br/><br/>
+        <p id='details'>Enter your details below</p><br/><br/>
         <input 
           onChange={e=>(setEmail(e.target.value))}
           value={email}
