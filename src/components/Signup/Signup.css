@@ -7,6 +7,13 @@
     overflow: hidden;
     
 }
+.signpg{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
 
 .cart-img{
  position: relative;
@@ -15,7 +22,7 @@
 }
 
 #cartImage{
-    width:35%;
+    width:65%;
     
 }
 
@@ -68,7 +75,7 @@ span{
     width: 200px;
 }
 #google-icon{
-    margin-top: 1.31px;  
+    margin-top: 1.3px;  
 }
 
 #login-link{
