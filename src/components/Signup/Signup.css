@@ -6,8 +6,15 @@
     background: #000;
     overflow: hidden;
     
-    
 }
+.signpg{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+
 .cart-img{
  position: relative;
  top:100px;
@@ -15,14 +22,14 @@
 }
 
 #cartImage{
-    width:35%;
+    width:65%;
     
 }
 
 .account-section-signUp{
-    position: relative;
-    left: 50%;
-    top: -280px;
+    
+    margin-left:5%;
+    margin-top: 10%;
     font-family: sans-serif;
     color: #fff;
 }

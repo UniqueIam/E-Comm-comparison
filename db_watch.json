@@ -1,0 +1,39 @@
+{
+    "watches":[
+        {
+          "id":1,
+          "brand":"Fire-Boltt",
+          "description":"Fire-Boltt Ninja Call Pro Plus 1.83 Smart Watch with Bluetooth",
+          "price":"1,299",
+          "image":"/images/watch1.jpg"
+        },
+        {
+            "id":2,
+            "brand":"Fire-Boltt",
+            "description":"Fire-Boltt Ninja Call Pro Plus 1.83 Smart Watch with Bluetooth",
+            "price":"1,299",
+            "image":"/images/watch2.jpg"
+        },
+        {
+            "id":3,
+            "brand":"Fire-Boltt",
+            "description":"Fire-Boltt Ninja Call Pro Plus 1.83 Smart Watch with Bluetooth",
+            "price":"1,299",
+            "image":"/images/watch3.jpg"
+        },
+        {
+            "id":4,
+            "brand":"Fire-Boltt",
+            "description":"Fire-Boltt Ninja Call Pro Plus 1.83 Smart Watch with Bluetooth",
+            "price":"1,499",
+            "image":"/images/watch4.jpg"
+        },
+        {
+            "id":5,
+            "brand":"Fire-Boltt",
+            "description":"Fire-Boltt Ninja Call Pro Plus 1.83 Smart Watch with Bluetooth",
+            "price":"1,299",
+            "image":"/images/watch4.jpg"
+        }
+    ]
+}
