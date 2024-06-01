@@ -5,19 +5,12 @@
     width: 100%;
     background: #000;
     overflow: hidden;
- 
 }
 .account-section-login{
-    position: relative;
-    top: -370px;
-    left: 620px;
+    margin-left:5%;
+    margin-top: 10%;
     font-family: sans-serif;
     color: #fff;
-}
-#cartImage-login{
-    width: 35%;
-    margin-top: 6%;
-    margin-left: 2%;
 }
 #login-btn{
 
