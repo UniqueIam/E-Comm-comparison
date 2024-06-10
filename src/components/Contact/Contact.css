@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-.contact-portion{
-    position: relative;
-    top: 7%;
-    /* background-color:#000; */
-    width: 100%;
-    height: 1000px;
-=======
 body{
     margin: 0;
     padding: 0;
     background-color: #000;
     font-family: 'Arial', sans-serif;
->>>>>>> 70b7e90d3f16642a8774ac3aee928cdd5d4936da
 }
 
 .contact-portion {
