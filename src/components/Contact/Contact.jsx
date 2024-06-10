@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Contact.css'
 import { FaPhone } from 'react-icons/fa';
+import SingleProduct from '../SingleProduct/SingleProduct';
 
 function Contact() {
+
+  useEffect(()=>{
+   window.scrollTo(0,0);
+  },[]);
   return (
     <>
       <div className='contact-portion'>
@@ -11,8 +16,9 @@ function Contact() {
              <div className='callus'>
                <FaPhone id='call'/><h3 className=''>Call To Us</h3>
               </div>
+             
         </div>
-        
+        <SingleProduct/>
       </div>
       
     </>

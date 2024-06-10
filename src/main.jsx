@@ -11,9 +11,11 @@ import Login from './components/Login/Login'
 import Layout from './components/Layout'
 import MyAccount from './components/MyAccount/MyAccount'
 import { createBrowserRouter,createRoutesFromElements,Route,RouterProvider } from 'react-router-dom'
+import { ProductProvider } from './context/ProductContext'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
+   
     <Route path='' element={<Layout />}>
       <Route path='' element={<Home />} />
       <Route path='about' element={<About/>} />
@@ -23,6 +25,7 @@ const router = createBrowserRouter(
       <Route path='login' element={<Login/>} />
       <Route path='myAccount' element={<MyAccount/>} />
     </Route>  
+   
   )
 )
 
@@ -30,8 +33,10 @@ const router = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+  <ProductProvider>
   <FirebaseProvider>
   <RouterProvider router={router} />
   </FirebaseProvider>
+  </ProductProvider>
   </React.StrictMode>,
 )
