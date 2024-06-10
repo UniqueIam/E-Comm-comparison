@@ -63,7 +63,7 @@ const Footer = () =>{
           <Link to='/contact' id='contact-btn'>
             Contact Us
           </Link><br/><br/>
-          <Link id='faq-btn'>
+          <Link to='/faq' id='faq-btn'>
             FAQ
           </Link>
         </div>
