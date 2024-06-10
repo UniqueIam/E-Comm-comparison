@@ -1,3 +1,50 @@
-#accordion{
-    color: red;
+.faq-heading{
+    color: aliceblue;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5%;
+    
+    font-size: xx-large;
+
+}
+.faq-wrap{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5%;
+    height:100vh
+   
+}
+.accordion{
+    width:55%
+}
+
+.accordion .item{
+    background-color: #1a171c;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.title{
+    color:aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.answer{
+    color: #8b7f75;
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 2%;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+
+.answer.show{
+    height:auto;
+    max-height: 9999px;
+    transition: all 0.5s cubic-bezier(1,0,1,0);
 }

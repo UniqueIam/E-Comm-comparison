@@ -57,6 +57,9 @@ span{
     cursor: pointer;
     color: #fff;
 }
+#account:hover {
+    background-color: #a00a04;
+}
 .account-already-exist{
     background-color: #fff;
     height: 30px;width: 400px;
