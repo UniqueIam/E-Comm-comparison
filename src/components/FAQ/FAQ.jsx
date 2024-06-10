@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './FAQ.css'
 import { questions } from '../faqQuestion';
-import { BiColorFill } from 'react-icons/bi';
 
 function FAQ() {
   const [selected ,setSelected]=useState(null);

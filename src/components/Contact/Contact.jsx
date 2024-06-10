@@ -1,11 +1,6 @@
 import React, { useEffect } from 'react'
 import './Contact.css'
-<<<<<<< HEAD
-import { FaPhone } from 'react-icons/fa';
-import SingleProduct from '../SingleProduct/SingleProduct';
-=======
 import { FaPhone ,FaEnvelope } from 'react-icons/fa';
->>>>>>> 70b7e90d3f16642a8774ac3aee928cdd5d4936da
 
 function Contact() {
 
@@ -23,11 +18,6 @@ function Contact() {
                <div className='cont-icon'><FaPhone/></div>
                <h3 className='call'>Call To Us</h3>
               </div>
-<<<<<<< HEAD
-             
-        </div>
-        <SingleProduct/>
-=======
               <div className='contact'>
                <p className='cont'>We are available 24/7, 7 days a week.<br></br><br></br>Phone : <span id='no'> +91 7325860606 <br/>+91 74889 57748</span></p>
               </div>
@@ -82,7 +72,6 @@ function Contact() {
             
          
         
->>>>>>> 70b7e90d3f16642a8774ac3aee928cdd5d4936da
       </div>
     </>
   );

@@ -12,11 +12,8 @@ import Layout from './components/Layout'
 import MyAccount from './components/MyAccount/MyAccount'
 import Error from './components/Error/Error'
 import { createBrowserRouter,createRoutesFromElements,Route,RouterProvider } from 'react-router-dom'
-<<<<<<< HEAD
-import { ProductProvider } from './context/ProductContext'
-=======
 import  FAQ  from './components/FAQ/FAQ'
->>>>>>> 70b7e90d3f16642a8774ac3aee928cdd5d4936da
+import { ProductProvider } from './context/ProductContext'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
