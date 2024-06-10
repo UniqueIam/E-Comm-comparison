@@ -46,6 +46,16 @@ function Header() {
          >
           Signup
          </NavLink>
+
+         
+         {/* <NavLink
+          to='/product'
+          style={({isActive})=>({
+            color:isActive ?"red":"black", textDecoration:isActive?"":'none'
+          })}
+         >
+          Products
+         </NavLink> */}
         </div>
 
         <div className='right-portion'>

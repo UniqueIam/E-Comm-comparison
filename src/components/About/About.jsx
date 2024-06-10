@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './About.css'
 import { Link } from 'react-router-dom'
 import { FaClock,FaPiggyBank,FaSmile } from 'react-icons/fa';
@@ -6,6 +6,10 @@ import { MdUpdate } from 'react-icons/md';
 
 
 function About() {
+
+  useEffect(()=>{
+  window.scrollTo(0,0);
+  },[]);
   return (
     <>
         <div className='about-portion'>

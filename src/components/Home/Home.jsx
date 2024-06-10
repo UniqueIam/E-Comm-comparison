@@ -1,11 +1,12 @@
 import React from 'react'
 import './Home.css'
-import FAQ from '../FAQ/FAQ'
 import Footer from '../Footer/Footer'
-
+import { Link } from 'react-router-dom'
 
 
 function Home() {
+
+
   return (
     <>
         
@@ -27,42 +28,59 @@ function Home() {
 
           <div className='grid-item'>
           <img src='./images/watches.jpg' />
-          <button id='watch-btn'>Watches</button>
+          {/* <button id='watch-btn'>Watches</button> */}
+          <button id='watch-btn'>
+            <Link to='/products/watches'>Watches</Link>
+           </button>
           </div>
 
           <div className='grid-item'>
           <img src='./images/shoes.jpg' />
-          <button id='shoes-btn'>Shoes</button>
+          <button id='shoes-btn'>
+          Shoes
+           </button>
           </div>
 
           <div className='grid-item'>
            <img src='./images/Bags.jpg' />
-           <button id='bags-btn'>Bags and Trolleys</button>
+           <button id='bags-btn'>
+           Bags
+           </button>
           </div>
 
           <div className='grid-item'>
           <img src='./images/dresses.jpg' />
-           <button id='dress-btn'>Dresses</button>
+          <button id='dress-btn'>
+          Dress
+           </button>
           </div>
 
           <div className='grid-item'>
           <img src='./images/phones.jpg' />
-           <button id='phones-btn'>Phones</button>
+          <button id='phones-btn'>
+          Phones
+           </button>
           </div>
 
           <div className='grid-item'>
            <img src='./images/laptops.jpg' />
-           <button id='laptops-btn'>Laptops</button>
+           <button id='laptops-btn'>
+           Laptops
+           </button>
           </div>
 
           <div className='grid-item'>
           <img src='./images/headphones.jpg' />
-           <button id='headphones-btn'>Headphones & Speaker</button>
+          <button id='headphones-btn'>
+          Headphones
+           </button>
           </div>
 
           <div className='grid-item'>
           <img src='./images/kidswear.jpg' />
-           <button id='kids-btn'>Kidswear</button>
+          <button id='kids-btn'>
+          KidsWear
+           </button>
           </div>
         </div>
          
@@ -72,7 +90,9 @@ function Home() {
         
       </div>
       <div className='view-all'>
-      <button id='all-prod'>view all products</button>
+          <button id='all-prod'>
+          View all Products
+           </button>
       </div>
        
     </div>   

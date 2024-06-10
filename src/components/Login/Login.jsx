@@ -23,7 +23,7 @@ function Login() {
     <>
       <div className='login-portion'>
       <div className='signpg'>
-       <img src='./images/image1.svg' alt='image' id='cartImage' />
+       <img src='./images/image1.svg' alt='image' id='cartImage-login' />
         <div className='account-section-login'>
         <h2>Log in to <span> PricePeek</span></h2>
         <p>Enter your details below</p><br/><br/>
