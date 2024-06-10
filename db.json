@@ -1,7 +1,42 @@
 {
-  "dresses": [
-    { "id": 1, "name": "Red Dress", "size": "M", "price": 29.99, "image": "url_to_red_dress_image" },
-    { "id": 2, "name": "Blue Dress", "size": "L", "price": 39.99, "image": "url_to_blue_dress_image" },
-    { "id": 3, "name": "Green Dress", "size": "S", "price": 25.99, "image": "url_to_green_dress_image" }
-  ]
+    "products":[
+        {
+          "id":1,
+          "title":"Fire-Boltt",
+          "image":"/images/watch1.jpg",
+          "description":"Fire-Boltt Ninja Call Pro Plus 1.83 Smart Watch with Bluetooth",
+          "featured":"true"
+        },
+        {
+          "id":2,
+          "title":"boAt",
+           "image":"/images/watch2.jpg",
+           "description":"boAt Xtend Smart Watch with Alexa Built-in, 1.69” HD Display,",
+           "featured":"true"
+        },
+        {
+          "id":3,
+          "title":"Noice",
+           "image":"/images/watch3.jpg",
+           "description":"Noise Twist Go Round dial Smartwatch with BT Calling, 1.39"
+        },
+        {
+          "id":4,
+          "title":"Fastrack",
+           "image":"/images/watch4.jpg",
+           "description":"Analog Unisex-Adult Watch"
+        },
+        {
+          "id":5,
+          "title":"TIMEWEAR",
+           "image":"/images/watch5.jpg",
+           "description":"Analog Day Date Functioning Stainless Steel Chain Watch for"
+        },
+        {
+          "id":6,
+          "title":"Fastrack",
+           "image":"/images/watch6.jpg",
+           "description":"Analog Silver Men Watch 3229SM02 / 3229SM02"
+        }
+    ]
 }

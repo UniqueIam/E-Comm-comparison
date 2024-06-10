@@ -13,9 +13,11 @@ import MyAccount from './components/MyAccount/MyAccount'
 import Error from './components/Error/Error'
 import { createBrowserRouter,createRoutesFromElements,Route,RouterProvider } from 'react-router-dom'
 import  FAQ  from './components/FAQ/FAQ'
+import { ProductProvider } from './context/ProductContext'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
+   
     <Route path='' element={<Layout />}>
       <Route path='' element={<Home />} />
       <Route path='about' element={<About/>} />
@@ -28,6 +30,7 @@ const router = createBrowserRouter(
       <Route path='*' element={<Error/>}/>
 
     </Route>  
+   
   )
 )
 
@@ -35,8 +38,10 @@ const router = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+  <ProductProvider>
   <FirebaseProvider>
   <RouterProvider router={router} />
   </FirebaseProvider>
+  </ProductProvider>
   </React.StrictMode>,
 )
