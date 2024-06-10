@@ -4,7 +4,6 @@ import axios from 'axios';
 const ProductContext = createContext();
 
 const initialState={
- isLoading:false,
  products:[],
  isError:false,
  singleProduct:{},

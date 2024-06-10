@@ -30,7 +30,7 @@ function Home() {
           <img src='./images/watches.jpg' />
           {/* <button id='watch-btn'>Watches</button> */}
           <button id='watch-btn'>
-          Watches
+            <Link to='/products/watches'>Watches</Link>
            </button>
           </div>
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './FAQ.css'
 import { questions } from '../faqQuestion';
 
@@ -11,6 +11,11 @@ function FAQ() {
       }
     setSelected(i)
   }
+
+  useEffect(()=>{
+     window.scrollTo(0,0);
+  },[]);
+  
   return (
     <>
     <h2 className='faq-heading'>f<span>a</span>q</h2>
