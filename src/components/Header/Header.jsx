@@ -48,14 +48,14 @@ function Header() {
          </NavLink>
 
          
-         {/* <NavLink
-          to='/product'
+         <NavLink
+          to='/products'
           style={({isActive})=>({
             color:isActive ?"red":"black", textDecoration:isActive?"":'none'
           })}
          >
           Products
-         </NavLink> */}
+         </NavLink>
         </div>
 
         <div className='right-portion'>

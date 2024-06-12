@@ -30,14 +30,14 @@ function Home() {
           <img src='./images/watches.jpg' />
           {/* <button id='watch-btn'>Watches</button> */}
           <button id='watch-btn'>
-            <Link to='/products/watches'>Watches</Link>
+            <Link to='/watches'>Watches</Link>
            </button>
           </div>
 
           <div className='grid-item'>
           <img src='./images/shoes.jpg' />
           <button id='shoes-btn'>
-          Shoes
+          <Link to='/shoes'>Shoes</Link>
            </button>
           </div>
 
