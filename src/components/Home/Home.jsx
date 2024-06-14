@@ -1,7 +1,7 @@
 import React from 'react'
 import './Home.css'
 import { Link } from 'react-router-dom'
-
+import Products from '../Products/Products'
 
 function Home() {
 
@@ -17,11 +17,12 @@ function Home() {
         </div>
       </div>
       <div className='secndprt'>
-        <div className='categories-section'>
-          <button></button>
-          <p id='cate'>categories</p>
-          <p id='browse_cate'>Browse By categories</p>
-        </div>
+        
+          <div className='categories-section'>
+              <button></button>
+              <p id='cate'>categories</p>
+              <p id='browse_cate'>Browse By categories</p>
+          </div>
         
         <div className='grid-container'>
 
@@ -98,17 +99,14 @@ function Home() {
            </Link>
           </div>
         </div>
-         
-           {/* <div className='accordion'>
-          <FAQ />
-         </div> */}
-        
-      </div>
-      <div className='view-all'>
-          <button id='all-prod'>
-          View all Products
-           </button>
-      </div>
+
+        <div className='view-all'>
+
+            <button id='all-prod'><Link to='/products'>View all Products</Link>
+            
+            </button>
+        </div>
+       </div> 
        
     </div>   
     </>
