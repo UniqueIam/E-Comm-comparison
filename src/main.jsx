@@ -14,7 +14,6 @@ import Error from './components/Error/Error'
 import { createBrowserRouter,createRoutesFromElements,Route,RouterProvider } from 'react-router-dom'
 import  FAQ  from './components/FAQ/FAQ'
 import ProductDetails from './components/ProductDetails/ProductDetails'
-import Products from './components/Products/Products'
 import SingleProductPage from './components/SingleProductPage/SingleProductPage'
 
 const router = createBrowserRouter(
@@ -29,19 +28,16 @@ const router = createBrowserRouter(
       <Route path='login' element={<Login/>} />
       <Route path='myAccount' element={<MyAccount/>} />
       <Route path='faq' element={<FAQ/>}/>
-      <Route path='products' element={<Products />}/>
-      <Route path=':category' element={<ProductDetails/>}>
-      <Route path=':id' element={<SingleProductPage/>}/>
+      {/* <Route path='products' element={<Products />}/> */}
+      <Route path='products/:category' element={<ProductDetails/>}>
       </Route>
+      <Route path='products/:category:productId' element={<SingleProductPage/>}/>
       <Route path='*' element={<Error/>}/>    
-
     </Route>  
    
   )
 )
-
-
-
+ 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
   
