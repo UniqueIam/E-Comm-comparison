@@ -1,6 +1,5 @@
 import React from 'react'
 import './Home.css'
-import Footer from '../Footer/Footer'
 import { Link } from 'react-router-dom'
 
 
@@ -29,58 +28,74 @@ function Home() {
           <div className='grid-item'>
           <img src='./images/watches.jpg' />
           {/* <button id='watch-btn'>Watches</button> */}
+          <Link to='/products/watches' id='watch-link'>
           <button id='watch-btn'>
-            <Link to='/watches'>Watches</Link>
+            Watches
            </button>
+           </Link>
           </div>
 
           <div className='grid-item'>
           <img src='./images/shoes.jpg' />
+          <Link to='/products/shoes' id='shoes-link'>
           <button id='shoes-btn'>
-          <Link to='/shoes'>Shoes</Link>
+          Shoes
            </button>
+           </Link>
           </div>
 
           <div className='grid-item'>
            <img src='./images/Bags.jpg' />
-           <button id='bags-btn'>
-           Bags
+           <Link to='/products/bags' id='bags-link'>
+           <button id='shoes-btn'>
+          Bags
            </button>
+           </Link>
           </div>
 
           <div className='grid-item'>
           <img src='./images/dresses.jpg' />
-          <button id='dress-btn'>
+          <Link to='/products/dress' id='dress-link'>
+          <button id='shoes-btn'>
           Dress
            </button>
+           </Link>
           </div>
 
           <div className='grid-item'>
           <img src='./images/phones.jpg' />
-          <button id='phones-btn'>
+          <Link to='/products/phones' id='phones-link'>
+          <button id='shoes-btn'>
           Phones
            </button>
+           </Link>
           </div>
 
           <div className='grid-item'>
            <img src='./images/laptops.jpg' />
-           <button id='laptops-btn'>
-           Laptops
+           <Link to='/products/laptops' id='laptops-link'>
+           <button id='shoes-btn'>
+          Laptops
            </button>
+           </Link>
           </div>
 
           <div className='grid-item'>
           <img src='./images/headphones.jpg' />
-          <button id='headphones-btn'>
+          <Link to='/products/headphones' id='headphones-link'>
+          <button id='shoes-btn'>
           Headphones
            </button>
+           </Link>
           </div>
 
           <div className='grid-item'>
           <img src='./images/kidswear.jpg' />
-          <button id='kids-btn'>
-          KidsWear
+          <Link to='/products/kidswear' id='kidswear-link'>
+          <button id='shoes-btn'>
+           KidsWear
            </button>
+           </Link>
           </div>
         </div>
          

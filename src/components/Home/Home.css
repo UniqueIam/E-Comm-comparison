@@ -98,13 +98,8 @@ button{
     margin-bottom: 5%;
     width: 100px;
     height: 40px;
-    
 }
-#watch-link,#shoes-link,#bags-link,#dress-link,#phones-link,
-#laptops-link,#headphones-link,#kids-link{
-    color: white;
-    text-decoration: none;
-}
+
 .view-all{
     
     text-align: center;

@@ -1,14 +1,14 @@
-import React from 'react'
-import './Products.css'
+// import React from 'react'
+// import './Products.css'
 
-function Products() {
-  return (
-    <>
-      <div className='products-part'>
-        products 
-      </div>
-    </>
-  )
-}
+// function Products() {
+//   return (
+//     <>
+//       <div className='products-part'>
+//         products 
+//       </div>
+//     </>
+//   )
+// }
 
-export default Products
+// export default Products
