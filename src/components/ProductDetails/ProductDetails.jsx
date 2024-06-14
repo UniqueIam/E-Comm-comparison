@@ -28,7 +28,7 @@ const reducer = (state, action) => {
   }
 };
 
-const ProductList = () => {
+const ProductDetails = () => {
   const { category } = useParams();
   const [state, dispatch] = useReducer(reducer, initialState);
 
@@ -76,7 +76,7 @@ const ProductList = () => {
         {state.products.length > 0 ? (
           state.products.map((product) => (
             <div key={product.id} id='single-product'>
-            <Link to={`/./${category}/${product.id}`}>
+            <Link to={`/products/${category}/${product.id}`}>
               <img src={product.image} style={{height:'220px',width:'180px'}} alt={product.title} />
               <h2 id='product-title'>{product.title}</h2>
               <p id='product-description'>{product.description}</p>
@@ -85,10 +85,10 @@ const ProductList = () => {
           ))
         ) : (
           <p>No products found for this category.</p>
-        )}
+        )}s
       </div>
     </div>
   );
 };
 
-export default ProductList;
+export default ProductDetails;
