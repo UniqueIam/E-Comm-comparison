@@ -6,7 +6,7 @@ function Cart() {
    <>
     <div className='cart-portion'>
       Cart Page
-      Hii
+      This is my Cart Page
     </div>
    </>
   )
