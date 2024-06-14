@@ -72,12 +72,15 @@
 
 // export default SingleProduct;
 
-import React from 'react'
+import React from 'react';
+import './singleproduct.css'
 
 function SingleProductPage() {
   return (
     <div>
       Single Product
+    <h1>helloo</h1>
+      
     </div>
   )
 }
