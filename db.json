@@ -43,6 +43,133 @@
            "image":"/images/watch6.jpg",
            "description":"Analog Silver Men Watch 3229SM02 / 3229SM02",
            "category":"watches"
+        },
+        {
+          "id":7,
+          "title":"ASIAN",
+          "image":"/images/shoes1.jpg",
+          "description":"Men's Tarzan-11 White Casual Sneaker High-Neck Shoes with",
+          "category":"shoes"
+        },
+        {
+          "id":8,
+          "title":"ASIAN",
+          "image":"/images/shoes2.jpg",
+          "description":"Men's Tarzan-11 White Casual Sneaker High-Neck Shoes with",
+          "category":"shoes"
+        },
+        {
+          "id":9,
+          "title":"Red Tape",
+          "image":"/images/shoes3.jpg",
+          "description":"Casual Sneaker Shoes for Men | Stylish and Comfortable",
+          "category":"shoes"
+        },
+        {
+          "id":10,
+          "title":"BRUTON",
+          "image":"/images/shoes4.jpg",
+          "description":"Exclusive Trendy Sports Running Shoes | Casual Shoe | Sneakers for",
+          "category":"shoes"
+        },
+        {
+          "id":11,
+          "title":"BRUTON",
+          "image":"/images/shoes5.jpg",
+          "description":"Men Sports Shoes Running Shoes - Black",
+          "category":"shoes"
+        },
+        {
+          "id":12,
+          "title":"Campus",
+          "image":"/images/shoes6.jpg",
+          "description":"Maxico Men's Running and Walking Shoes | Knitted Vamp",
+          "category":"shoes"
+        },
+        {
+          "id":13,
+          "title":"M MEDLER",
+          "image":"/images/bag1.jpg",
+          "description":"Epoch Nylon 55 litres Waterproof Strolley Duffle Bag- 2 Wheels -",
+          "category":"bags"
+        },
+        {
+          "id":14,
+          "title":"Impulse",
+          "image":"/images/bag2.jpg",
+          "description":"60 Litres Keep Discovering Light Waterproof Rucksack Trekking",
+          "category":"bags"
+        },
+        {
+          "id":15,
+          "title":"Safari",
+          "image":"/images/bag3.jpg",
+          "description":"Pentagon 55 Cms Small Cabin Polypropylene Hard Sided 4",
+          "category":"bags"
+        },
+        {
+          "id":16,
+          "title":"FUR JADEN",
+          "image":"/images/bag4.jpg",
+          "description":"Brown Textured Leatherette Stylish & Spacious Weekender",
+          "category":"bags"
+        },
+        {
+          "id":16,
+          "title":"Safari",
+          "image":"/images/bag5.jpg",
+          "description":"Omega spacious/large laptop backpack with Raincover, college",
+          "category":"bags"
+        },
+        {
+          "id":17,
+          "title":"Gear",
+          "image":"/images/bag6.jpg",
+          "description":"Cross Polyester Training 26L Medium Water Resistant Travel",
+          "category":"bags" 
+        },
+        {
+          "id":18,
+          "title":"rytras",
+          "image":"/images/dress1.jpg",
+          "description":"Women's Cotton Printed Straight Kurti Set",
+          "category":"dress" 
+        },
+        {
+          "id":19,
+          "title":"GoSriKi",
+          "image":"/images/dress2.jpg",
+          "description":"Women's Cotton Blend Embroidered Straight Kurta with",
+          "category":"dress"
+        },
+        {
+          "id":20,
+          "title":"KD",
+          "image":"/images/dress3.jpg",
+          "description":"KD Women's Anarkali Floral Printed Kurta Pent Set with",
+          "category":"dress"
+        },
+        {
+          "id":21,
+          "title":"Generic",
+          "image":"/images/dress4.jpg",
+          "description":"Bandhani Suit WD Heavy Yoke Straight Kurta Set for Women",
+          "category":"dress"
+        },
+        {
+          "id":22,
+          "title":"FUNDAY FASHION",
+          "image":"/images/dress5.jpg",
+          "description":"Women Regular Fit Solid V Collered Casual Shirt (Pack of 2)",
+          "category":"dress"
+        },
+        {
+          "id":23,
+          "title":"DISOLVE",
+          "image":"/images/dress6.jpg",
+          "description":"Stylish Indian Kurtis for Women Print & Embroidered Casual Tunic",
+          "category":"dress"
         }
+        
     ]
 }

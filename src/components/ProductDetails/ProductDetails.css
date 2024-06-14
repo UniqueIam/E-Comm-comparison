@@ -33,3 +33,6 @@
   #product-description{
     color: rgb(226, 219, 219);
   }
+  #product-links{
+    text-decoration:none;
+  }

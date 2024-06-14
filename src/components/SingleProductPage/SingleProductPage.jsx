@@ -1,6 +1,5 @@
-// // SingleProduct.js
-
-// import React, { useReducer, useEffect } from 'react';
+// // src/components/SingleProduct/SingleProduct.js
+// import React, { useEffect, useReducer } from 'react';
 // import { useParams } from 'react-router-dom';
 
 // const initialState = {
@@ -30,10 +29,11 @@
 
 // const SingleProduct = () => {
 //   const { id } = useParams();
+//   console.log("Id clicked is",id);
 //   const [state, dispatch] = useReducer(reducer, initialState);
 
 //   useEffect(() => {
-//     const fetchSingleProduct = async () => {
+//     const fetchProduct = async () => {
 //       try {
 //         const response = await fetch(`http://localhost:5000/products?id=${id}`);
 //         if (!response.ok) {
@@ -46,7 +46,7 @@
 //       }
 //     };
 
-//     fetchSingleProduct();
+//     fetchProduct();
 //   }, [id]);
 
 //   if (state.loading) {
@@ -57,28 +57,28 @@
 //     return <div>Error: {state.error}</div>;
 //   }
 
+//   const { product } = state;
+
 //   return (
-//     <div className="product-detail">
-//       {state.product && (
-//         <div>
-//           <h1>{state.product.name}</h1>
-//           <p>{state.product.description}</p>
-//           <p>Price: ${state.product.price}</p>
-//           <img src={state.product.image} alt={state.product.name} />
-//           <button>Add to Cart</button>
-//         </div>
-//       )}
+//     <div>
+//       <h1>{product.name}</h1>
+//       <img src={product.image} alt={product.name} />
+//       <p>{product.description}</p>
+//       <p>Price: ${product.price}</p>
+//       {/* Add more product details as needed */}
 //     </div>
 //   );
 // };
 
 // export default SingleProduct;
+
 import React from 'react';
 import './singleproduct.css'
 
 function SingleProductPage() {
   return (
     <div>
+      Single Product
     <h1>helloo</h1>
       
     </div>
