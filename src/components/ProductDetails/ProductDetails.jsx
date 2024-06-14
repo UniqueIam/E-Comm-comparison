@@ -76,7 +76,7 @@ const ProductList = () => {
         {state.products.length > 0 ? (
           state.products.map((product) => (
             <div key={product.id} id='single-product'>
-            <Link to={`/${product}/${product.id}`}>
+            <Link to={`/products/${product.category}/${product.id}`} id='product-links'>
               <img src={product.image} style={{height:'220px',width:'180px'}} alt={product.title} />
               <h2 id='product-title'>{product.title}</h2>
               <p id='product-description'>{product.description}</p>
