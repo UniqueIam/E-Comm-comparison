@@ -73,11 +73,13 @@
 // };
 
 // export default SingleProduct;
-import React from 'react'
+import React from 'react';
+import './singleproduct.css'
 
 function SingleProductPage() {
   return (
     <div>
+    <h1>helloo</h1>
       
     </div>
   )
