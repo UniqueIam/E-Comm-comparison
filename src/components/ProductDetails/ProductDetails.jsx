@@ -72,6 +72,9 @@ const ProductDetails = () => {
   return (
     <div className='product-part'>
       {/* <h1>{category.charAt(0).toUpperCase() + category.slice(1)}</h1> */}
+      <div className='filter-section'>
+        Filters
+      </div>
       <div className='product-category'>
         {state.products.length > 0 ? (
           state.products.map((product) => (
