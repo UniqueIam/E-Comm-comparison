@@ -80,7 +80,7 @@ const ProductDetails = () => {
           state.products.map((product) => (
             <div key={product.id} id='single-product'>
             <Link to={`/products/${category}/${product.id}`}>
-              <img src={product.image} style={{height:'220px',width:'180px'}} alt={product.title} />
+              <img src={product.image[0]} style={{height:'220px',width:'180px'}} alt={product.title} />
               <h2 id='product-title'>{product.title}</h2>
               <p id='product-description'>{product.description}</p>
               </Link>
