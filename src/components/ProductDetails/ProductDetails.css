@@ -3,8 +3,19 @@
 .product-part {
      /* background-color: #b62525; */
      text-align: center;
+     display: flex;
+     column-gap: 10%;
+     margin-left: 7%;
+    
   }
-  
+  .filter-section{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around
+  }
+
+
   .product-category {
     margin-left: 80px;
     margin-right: 10px;
@@ -13,7 +24,7 @@
     grid-gap: 40px;
     grid-template-columns: repeat(3,1fr);
     /* background-color: #f0f0f0; */
-    padding: 20px;
+    padding: 20px; 
   }
   #single-product{
     background-color: rgb(54, 54, 52);
