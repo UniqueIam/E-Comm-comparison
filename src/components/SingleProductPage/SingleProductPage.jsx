@@ -74,7 +74,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { useReducer } from 'react';
-import './Singleproduct.css'
+import './singleproduct.css'
 import { useParams } from 'react-router';
 
 const reducer = (state,action) =>{
