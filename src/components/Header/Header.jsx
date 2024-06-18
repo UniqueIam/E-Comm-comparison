@@ -1,20 +1,24 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './Header.css'
-import { CiSearch } from "react-icons/ci";
+ import { CiSearch } from "react-icons/ci"; */
 import { FaShoppingCart } from "react-icons/fa";
+import { BiUserCircle } from 'react-icons/bi';
+/* 
+import Search from '../Search';
+import Route from 'react-router-dom'; */
 
 function Header() {
 
   return (
     <>
       <div className='nav-portion'>
-        <div className='left-part'>PricePeek</div>
+        <div className='left-part'><p>Price<span>Peek</span></p></div>
         <div className='middle-part'>
         <NavLink
           to="/"
            style={({isActive})=>({
-            color:isActive? "red" :"black",textDecoration:isActive?"":'none'
+            color:isActive? "#d60c0c" :"aliceblue",textDecoration:isActive?"":'none'
            })}
            >
            Home
@@ -23,7 +27,7 @@ function Header() {
          <NavLink
           to='/about'
           style={({isActive})=>({
-            color:isActive ?"red":"black", textDecoration:isActive?"":'none'
+            color:isActive ?"#d60c0c":"aliceblue", textDecoration:isActive?"":'none'
           })}
          >
           About
@@ -32,7 +36,7 @@ function Header() {
          <NavLink
           to='/contact'
           style={({isActive})=>({
-            color:isActive ?"red":"black", textDecoration:isActive?"":'none'
+            color:isActive ?"#d60c0c":"aliceblue", textDecoration:isActive?"":'none'
           })}
          >
           Contact
@@ -41,7 +45,7 @@ function Header() {
          <NavLink
           to='/signup'
           style={({isActive})=>({
-            color:isActive ?"red":"black", textDecoration:isActive?"":'none'
+            color:isActive ?"#d60c0c":"aliceblue", textDecoration:isActive?"":'none'
           })}
          >
           Signup
@@ -50,15 +54,35 @@ function Header() {
         </div>
 
         <div className='right-portion'>
-          <input
+        <div className='searchinput'>
+         <CiSearch id='search-icon' />
+          <input 
             type='text'
-            placeholder='what are you lookin for?'
-           
+            placeholder='What are you looking for ?'
+            id='search'
           />
-            <CiSearch id='search-icon' />
+           
+
+          {/* <Route render={(history)=><Search history={history}/>  }/> */}
+
+
+
+          </div>
+          
+            <div>
             <Link to='/cart'>
-            <FaShoppingCart id='cart-icon' />
+                <FaShoppingCart id='cart-icon' />
+              </Link>
+            </div>
+              
+            
+            
+            <div>
+            <Link to=''>
+              <BiUserCircle id='id-icon'/>
             </Link>
+            </div>
+            
             
         </div>
       </div>
