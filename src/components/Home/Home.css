@@ -1,3 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+NZ:wght@100..400&display=swap');
+
+Home.home-portion Header{
+    background-image: url("../../../public/images/bgimage.png");
+    background-size: 100%;
+}
 .home-portion{
     position:relative;
     /* height: 100%; */
@@ -10,14 +18,37 @@
     overflow: hidden;
 }
 .firstprt{
-    margin-top:5%;
-    margin-left: 5%;
+    
+    display: flex;
     height:100vh;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+    justify-content: center;
+
+     /* background-image: url("../../../public/images/bgimage.png");
+    background-repeat: no-repeat;
+    background-size:100%;  */
     
-    
+}
+.head{
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: italic;
+  color:#D60C0C;
+}
+.front_des{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-family: "Playwrite NZ",sans-serif;
+    font-size: 37px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+.des{
+    color:#D60C0C;
 }
 
 .heading{
@@ -42,14 +73,14 @@ button{
     width: 10px;
     height: 20px;
     border: none;
-    background-color: red;
+    background-color: #D60C0C;
 }
 
 #cate{
     position: relative;
     top: -23px;
     left: 20px;
-    color: red;
+    color:#D60C0C;
     font-weight: 600;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -79,12 +110,15 @@ button{
 }
 .grid-item img{
     overflow: hidden;
+
     
 }
 .grid-item img:hover{
-    filter: drop-shadow(
-        20px 20px 40px pink
-    );
+    
+    transform: scale(1.02);
+    /* filter: drop-shadow(
+        2px 2px 40px #d60c06
+    ); */
 }
 #watch-btn,#shoes-btn,#bags-btn,#dress-btn,#phones-btn,
 #laptops-btn,#headphones-btn,#kids-btn
@@ -103,11 +137,11 @@ button{
 .view-all{
     
     text-align: center;
-    margin-bottom: 10%;
-    margin-top: 7%;
+    
+    margin-top: 10%;
 }
 #all-prod{
-    width: 100px;
+    width: 150px;
     height: 40px;
     position: relative;
     text-align: center;

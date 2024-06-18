@@ -9,7 +9,7 @@
 }
 .signpg{
     display: flex;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 5%;
     margin-bottom: 5%;
 }
@@ -34,7 +34,7 @@
     color: #fff;
 }
 span{
-    color: red;
+    color:#d60c0c;
 }
 .details{
     font-size: 12px;
@@ -42,6 +42,7 @@ span{
 }
 #email-field,#name-field,#password-field{
     background: transparent;
+    height: 28px;
     width: 300px;
     border-bottom: 2px solid rgb(87, 74, 74);
     outline: none;
@@ -50,7 +51,7 @@ span{
   }
 
   #account{
-    background-color: red;
+    background-color: #d60c0c;
     border: none;
     width: 170px;
     height: 40px;
@@ -62,7 +63,8 @@ span{
 }
 .account-already-exist{
     background-color: #fff;
-    height: 30px;width: 400px;
+    height: 30px;
+    width: 400px;
 }
 
 #signup-google{

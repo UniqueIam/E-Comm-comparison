@@ -112,7 +112,7 @@ h1,h2{
   background-color: aliceblue;
   border-radius: 20px;
   position: relative;
-    color:#d60c06;
+    color:#d60c0c;
     text-align: center;
     align-items: center;
     font-size:x-large;
@@ -134,7 +134,7 @@ transform: scale(1.01);
 }
 .why{
   font-size: 45px;
-  color: #d60c06;
+  color: #d60c0c;
   font-style: italic;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -172,7 +172,7 @@ text-shadow: 0px 0px 4px rgba(221, 25, 25, 0.25), 0px 0px 8px rgba(240, 22, 22, 
   height: 58px;
   font-size:40px;
   margin-bottom: 10px;
-  background-color: #d60c06;
+  background-color: #d60c0c;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
