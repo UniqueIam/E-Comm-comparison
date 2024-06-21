@@ -1,81 +1,12 @@
-// // src/components/SingleProduct/SingleProduct.js
-// import React, { useEffect, useReducer } from 'react';
-// import { useParams } from 'react-router-dom';
-
-// const initialState = {
-//   product: null,
-//   loading: true,
-//   error: null,
-// };
-
-// const reducer = (state, action) => {
-//   switch (action.type) {
-//     case 'FETCH_SUCCESS':
-//       return {
-//         ...state,
-//         product: action.payload,
-//         loading: false,
-//       };
-//     case 'FETCH_ERROR':
-//       return {
-//         ...state,
-//         loading: false,
-//         error: action.payload,
-//       };
-//     default:
-//       return state;
-//   }
-// };
-
-// const SingleProduct = () => {
-//   const { id } = useParams();
-//   console.log("Id clicked is",id);
-//   const [state, dispatch] = useReducer(reducer, initialState);
-
-//   useEffect(() => {
-//     const fetchProduct = async () => {
-//       try {
-//         const response = await fetch(`http://localhost:5000/products?id=${id}`);
-//         if (!response.ok) {
-//           throw new Error('Failed to fetch product');
-//         }
-//         const data = await response.json();
-//         dispatch({ type: 'FETCH_SUCCESS', payload: data });
-//       } catch (error) {
-//         dispatch({ type: 'FETCH_ERROR', payload: error.message });
-//       }
-//     };
-
-//     fetchProduct();
-//   }, [id]);
-
-//   if (state.loading) {
-//     return <div>Loading...</div>;
-//   }
-
-//   if (state.error) {
-//     return <div>Error: {state.error}</div>;
-//   }
-
-//   const { product } = state;
-
-//   return (
-//     <div>
-//       <h1>{product.name}</h1>
-//       <img src={product.image} alt={product.name} />
-//       <p>{product.description}</p>
-//       <p>Price: ${product.price}</p>
-//       {/* Add more product details as needed */}
-//     </div>
-//   );
-// };
-
-// export default SingleProduct;
-
 import React, { useEffect, useState } from 'react';
 import { useReducer } from 'react';
-import './singleproduct.css'
+import './Singleproduct.css'
+import Stars from '../Stars';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
+import { FaShoppingCart } from "react-icons/fa";
+import { useCartContext } from '../../context/CartContext';
+
 
 const reducer = (state,action) =>{
     switch (action.type) {
@@ -109,7 +40,8 @@ function SingleProductPage() {
   console.log("Id of the product is",id);
   console.log("The category of the product is:",category);
   const [ state,dispatch] = useReducer(reducer,initialState);
- const [mainImage,setMainImage] = useState('');
+  const [mainImage,setMainImage] = useState('');
+  const { cartProducts } = useCartContext();
 
   const fetchSingleProduct = async() =>{
     try {
@@ -121,7 +53,8 @@ function SingleProductPage() {
       // console.log(data[0].image);
       // console.log(data[0].image[0]);
       const singleProduct = data[0];
-      console.log(data);
+      console.log("My data",data);
+      console.log(data[0].stars);
       dispatch({type:"GET_SINGLE_PRODUCT",payload:singleProduct});
       setMainImage(singleProduct.image[0]);
     } catch (error) {
@@ -149,47 +82,7 @@ function SingleProductPage() {
   }
   return (
    <>
-    {/* <div className='single-product-part'>
-    <div className='top-single-product'>
-     <div className='left-part-single-product'>
-      <div className='left-grid1-single-product'>
-        <div className='left-grid-item' onClick={(()=>{
-          setMainProduct(product.image[0])
-        })}>
-          <img src={product.image[0]} alt='1st product' style={{height:"110px",width:"150px"}}/>
-        </div>
-        <div className='left-grid-item' onClick={(()=>{
-          setMainProduct(product.image[1])
-        })}>
-        <img src={product.image[1]} alt='1st product' style={{height:"110px",width:"150px"}}/>
-        </div>
-        <div className='left-grid-item' onClick={(()=>{
-          setMainProduct(product.image[2])
-        })}>
-        <img src={product.image[2]} alt='1st product' style={{height:"110px",width:"150px"}}/>
-        </div>
-        <div className='left-grid-item' onClick={(()=>{
-          setMainProduct(product.image[3])
-        })}>
-        <img src={product.image[3]} alt='1st product' style={{height:"110px",width:"150px"}}/>
-        </div>
-      </div>
-
-      <div className='left-grid2-single-product'>
-        <div className='left2-grid-item'>
-        
-        <img src={product.image[0]} alt='1st product' style={{height:"555px",width:"400px"}}/>
-        </div>
-      </div>
-    </div>
-    <div className='right-part-single-product'>
-
-    </div>
-    </div>
-    <div className='comparison-part-single-product'>
-
-    </div>
-    </div> */}
+    
     <div className='single-product-page'>
       <div className='image-thumbnails'>
         {product.image.map((img, index) => (
@@ -206,7 +99,43 @@ function SingleProductPage() {
         <h2 id='single-product-name'>{product.title}</h2>
         <p id='star'>star</p><br/>
         <p>{product.single_page_description}</p>
+        <p>{product.price}</p>
+        <Stars stars={product.stars}/>
+        <Link to='https://www.amazon.in/Fire-Boltt-Bluetooth-Calling-Assistance-Resolution/dp/B0BF57RN3K/ref=sr_1_7?crid=354ZAD850V6IC&dib=eyJ2IjoiMSJ9.1ziruIke18LfDZManf-o-OebEm1M_zH4mISKMdHRmGaZmY8nDNfzQGIn1aVs6PNrYpb7D3hb_QIIhozIJePhx2DvJANeusR16W_AgjLKql37VRJMuQyPRKTxfxGVMQZbfM4sS4oTMh4keSyYnzWip0opUGPmyAm4ivcORXRB-tQLYAiH7eM4L-Uc2bvgtfUE6xsV8xlzzg8J97quTxSF6cUCzf-Q1mFo-x-QU2QZBVBlqO2APJAXbYQfpxMpOG-NFF5uNdWNKhyp5_-IjvsnXeMByyRho5lOte1fhXs0Zvc.Ird4yMuRVuR9CIkciCjBWVxMvH0ScoxgrTkHau8oLcI&dib_tag=se&keywords=watches&qid=1718786531&sprefix=watches%2Caps%2C639&sr=8-7'>
+          <p>Buy Now</p>
+        </Link>
     </div>
+    </div>
+
+    <p id='comparison'>Comparison</p>
+    <div className='single-product-comparison'>
+      <div className='amazon-price'>
+         <h2 id='amazon-heading'>Amazon</h2>
+         <p id='price'>Price :-<span id='price-color'> {product.price}</span></p><br/>  
+         <p id='ratings'>Rating :- <span id='rating-color'> <Stars stars={product.stars}/> </span></p><br/>
+         <Link to='/cart'
+         onClick={() => cartProducts({ id: product.id, price: product.price,product })}         >
+         <button 
+         id='add-to-cart' 
+         
+         >
+         <FaShoppingCart id='cart-icon' />
+         Add To Cart
+         </button>
+         </Link><br/><br/>
+         <Link >
+         <button id='buy-now'>Buy Now</button>
+         </Link>
+      </div>
+      <div className='flipkart-price'> 
+      <h2 id='flipkart-heading'>Flipkart</h2>
+      </div>
+      <div className='meesho-price'>
+      <h2 id='meesho-heading'>Meesho</h2>
+      </div>
+      <div className='myntra-price'>
+      <h2 id='myntra-heading'>myntra</h2>
+      </div>
     </div>
 
     

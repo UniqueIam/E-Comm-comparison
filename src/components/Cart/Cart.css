@@ -1,5 +1,99 @@
 .cart-portion{
-    position:relative;
-    top: 10%;
-    background-color: #fff;
+  width: 100%;
+  height: auto;
+  /* background-color: #fff; */
+  display: flex;
+  gap: 5%;
+}
+
+.cart-left{
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+#empty-cart {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 800;
+  font-family: sans-serif;
+  color: red;
+}
+
+.cart-items {
+  background-color: rgb(78, 78, 80);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.individual-cart-item {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 1px solid beige;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.cart-product-image {
+  width: 180px; 
+}
+
+#cart-image {
+  width: 100%;
+  height: auto; 
+  display: block;
+}
+
+.cart-product-details {
+  flex-grow: 1;
+}
+
+.cart-product-description {
+  font-size: 18px; 
+  margin-top: 0; 
+}
+
+.cart-product-price {
+  font-size: 16px; 
+  margin-top: 10px; 
+}
+
+.remove-text {
+  font-size: 16px; 
+  color: white;
+  cursor: pointer;
+  margin-top: 10px; 
+}
+
+.remove-text:hover {
+  color: red;
+}
+
+.underline-cart-page {
+  border-bottom: 4px solid black;
+}
+
+.price-details {
+  background-color: wheat;
+  width: 30%;
+}
+
+#price-details-heading {
+  text-align: center;
+}
+.price-details{
+  background-color: red;
+  height: 200px;
+  width: 40%;
+  margin-top: 20px;
+}
+#price-detail-heading{
+  text-align: center;
 }
