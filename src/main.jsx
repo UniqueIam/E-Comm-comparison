@@ -32,6 +32,7 @@ const router = createBrowserRouter(
       <Route path="products" element={<Products />}/>
       <Route path="products/:category" element={<ProductDetails />} />
       <Route path="products/:category/:id" element={<SingleProductPage />} />
+     {/*  <Route path="/search/:keyword" element={<Home/>} */}
       <Route path="*" element={<Error />} />
     </Route>
 

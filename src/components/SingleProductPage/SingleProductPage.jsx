@@ -76,6 +76,8 @@ import React, { useEffect, useState } from 'react';
 import { useReducer } from 'react';
 import './singleproduct.css'
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
+import CartAmountToggle from '../CartAmountToggle';
 
 const reducer = (state,action) =>{
     switch (action.type) {
@@ -105,6 +107,12 @@ const initialState = {
 };
 
 function SingleProductPage() {
+  
+
+
+
+
+
   const { id,category } = useParams();
   console.log("Id of the product is",id);
   console.log("The category of the product is:",category);
@@ -205,7 +213,28 @@ function SingleProductPage() {
       <div className='single-product-page-details'>
         <h2 id='single-product-name'>{product.title}</h2>
         <p id='star'>star</p><br/>
-        <p>{product.single_page_description}</p>
+        <p id='prod-description'>{product.single_page_description}</p>
+        
+        <div id='p-details'>
+            <p id='avalaibility'>Available : </p>
+            
+
+            <div className='division'></div>
+
+            <p className='color'>Color : </p>
+            <div className='size-box'>
+              Size :
+            </div> 
+            <p className='quantity'>Quantity :
+            <CartAmountToggle/>
+            </p>
+
+
+            <div>Favourites</div>
+        </div>
+        <div id='add-cart'>
+        <Link to=''><button id='to-cart'>Add to cart</button></Link>
+        </div>
     </div>
     </div>
 
