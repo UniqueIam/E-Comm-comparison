@@ -16,17 +16,17 @@ function Login() {
   }
 
   const changeBgBack = () =>{
-    document.querySelector('#login-btn').style.backgroundColor='red';
+    document.querySelector('#login-btn').style.backgroundColor='#d60c0c';
     document.querySelector('#login-btn').style.color='white';
   }
   return (
     <>
       <div className='login-portion'>
       <div className='signpg'>
-       <img src='./images/image1.svg' alt='image' id='cartImage-login' />
+       <img src='./images/image1.svg' alt='image' id='cartImage' />
         <div className='account-section-login'>
         <h2>Log in to <span> PricePeek</span></h2>
-        <p>Enter your details below</p><br/><br/>
+        <p className="details">Enter your details below</p><br/><br/>
         <input 
           onChange={e=>(setEmail(e.target.value))}
           value={email}

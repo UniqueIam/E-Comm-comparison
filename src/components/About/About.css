@@ -8,7 +8,7 @@
     height: 294%;
     background-color: #000;
     color: #fff;
-    overflow: hidden;
+    
 }
 
 .firsthalf{
@@ -81,8 +81,9 @@ h1,h2{
   }
   
   .sru {
-    background-image: url(../../../public/images/sruti_profPic.jpg);
-    background-size: cover;
+    background-image: url(../../../public/images/sruti2.jpg);
+    background-size:auto 108%; /* Increase the height to 250%, width auto to maintain aspect ratio */
+    background-position:48% -10%;
     background-repeat: no-repeat;
     -webkit-mask:url("../../../public/images/g2.png");
     -webkit-mask-size: 100%;
@@ -112,7 +113,7 @@ h1,h2{
   background-color: aliceblue;
   border-radius: 20px;
   position: relative;
-    color:#d60c06;
+    color:#d60c0c;
     text-align: center;
     align-items: center;
     font-size:x-large;
@@ -134,7 +135,7 @@ transform: scale(1.01);
 }
 .why{
   font-size: 45px;
-  color: #d60c06;
+  color: #d60c0c;
   font-style: italic;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -172,7 +173,7 @@ text-shadow: 0px 0px 4px rgba(221, 25, 25, 0.25), 0px 0px 8px rgba(240, 22, 22, 
   height: 58px;
   font-size:40px;
   margin-bottom: 10px;
-  background-color: #d60c06;
+  background-color: #d60c0c;
   border-radius: 50%;
   justify-content: center;
   align-items: center;

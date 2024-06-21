@@ -20,7 +20,7 @@ function SignUp() {
      <div className='signpg'>
          <img src='./images/image1.svg' alt='image' id='cartImage' />
             <div className='account-section-signUp'>
-              <h2>Create an <span>Acc</span></h2><br/>
+              <h2>Create an <span>Account</span></h2><br/>
               <p className="details">Enter your details below</p><br/><br/>
                 <input 
                 type='text'

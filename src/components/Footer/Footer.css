@@ -39,10 +39,8 @@ li{
     background-image: linear-gradient(115deg, rgb(249, 206, 52), rgb(238, 42, 123), rgb(98, 40, 215));;
     
 }
-#face-logo{
-    background-color: #f0f0f8;
-}
-#linkedin-logo{
+
+#face-logo,#linkedin-logo,#twitter-logo{
     background-color: #f0f0f8;
 
 } 
