@@ -17,6 +17,7 @@ import FAQ from './components/FAQ/FAQ';
 import Products from './components/Products/Products';
 import ProductDetails from './components/ProductDetails/ProductDetails';
 import SingleProductPage from './components/SingleProductPage/SingleProductPage';
+import { CartProvider } from './context/CartContext';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -41,10 +42,10 @@ const router = createBrowserRouter(
  
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-  
   <FirebaseProvider>
+  <CartProvider>
   <RouterProvider router={router} />
+  </CartProvider>
   </FirebaseProvider>
-  
   </React.StrictMode>,
 )

@@ -7,7 +7,9 @@
     /* background-color: #fff; */
     /* width: 700px; */
   }
-  
+  .single-product-page-details{
+    color: #dfdada;
+  }
   .image-thumbnails {
     display: flex;
     flex-direction: column;
@@ -38,54 +40,82 @@
     
   }
   .single-product-page-details{
-    
-    height: 500px;
-    width: 400px;
+    /* background-color: #c27676; */
+    height: 400px;
+    width: 500px;
     margin-left: 100px;
   }
-
-  .division{
-    border: 1px solid thistle;
-    margin: 5% 0 5% 0;
+  .single-product-comparison{
+    /* background-color: rgb(212, 165, 165); */
+    height: 600px;
+    width: auto;
+    margin-top: 100px;
+    margin-left: 80px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
   }
-
-  #single-product-name{
-    color:aliceblue;
+  #comparison{
+    color: red;
+    font-weight: 700;
+    font-size: 40px;
+    padding-left: 10px;
+    margin-top: 100px;
+    margin-left: 80px;
   }
-  #star{
-    color:goldenrod;
+  .amazon-price,.flipkart-price,.meesho-price,.myntra-price{
+    height: 250px;
+    width: 300px;
+    background-color: rgb(94, 95, 95);
   }
-
-  #prod-description{
-    color: white;
+  .amazon-price:hover,.flipkart-price:hover,.meesho-price:hover,.myntra-price:hover{
+    border-radius: 30%;
   }
-
-  #p-details{
-    color: azure;
-    margin-top:10%
-  }
-
-  #add-cart{
-
-    justify-content: center;
+  #amazon-heading,#flipkart-heading,#meesho-heading,#myntra-heading{
     text-align: center;
-    margin-top:10%
-    
-    
-
-      }
- 
- 
-  #to-cart{
-    cursor: pointer;
-    color: #fff;
-    font-weight: 500;
-    border-radius: 4px;
-    width: 150px;
-    height: 40px;
   }
-
-  .quantity{
-    display: flex;
-    gap:10%
+   #price{
+    font-size: 20px;
+    color: rgb(211, 56, 56);
+    font-weight: 600;
+    padding-left: 20px;
+    padding-top: 20px;
+   }
+  #price-color{
+    color: #fff;
+  }
+  #ratings{
+    font-size: 20px;
+    padding-left: 20px;
+    color: rgb(243, 44, 44);
+    font-weight: 600;
+  }
+  #add-to-cart{
+    text-decoration: none;
+    border: 2px solid ;
+    border-color: none;
+    width: 140px;
+    height: 35px;
+    margin-left: 90px;
+    text-align: center;
+    cursor: pointer;
+    gap: 100px;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: orange;
+  }
+  #buy-now{
+    text-decoration: none;
+    border: 2px solid ;
+    border-color: none;
+    width: 140px;
+    height: 35px;
+    margin-left: 90px;
+    text-align: center;
+    cursor: pointer;
+    gap: 100px;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: orangered;
   }
