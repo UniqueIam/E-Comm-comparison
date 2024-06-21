@@ -26,7 +26,7 @@ function Home() {
       </div>
       <div className='secndprt'>
         <div className='categories-section'>
-          <button></button>
+          <div className='cate-div'></div>
           <p id='cate'>Categories</p>
           <p id='browse_cate'>Browse By Categories</p>
         </div>
