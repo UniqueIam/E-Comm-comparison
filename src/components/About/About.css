@@ -8,7 +8,7 @@
     height: 294%;
     background-color: #000;
     color: #fff;
-    overflow: hidden;
+    
 }
 
 .firsthalf{
@@ -81,8 +81,9 @@ h1,h2{
   }
   
   .sru {
-    background-image: url(../../../public/images/sruti_profPic.jpg);
-    background-size: cover;
+    background-image: url(../../../public/images/sruti2.jpg);
+    background-size:auto 108%; /* Increase the height to 250%, width auto to maintain aspect ratio */
+    background-position:48% -10%;
     background-repeat: no-repeat;
     -webkit-mask:url("../../../public/images/g2.png");
     -webkit-mask-size: 100%;

@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import { Link } from 'react-router-dom'
-import { FaSquareInstagram } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareTwitter } from "react-icons/fa6";
@@ -37,7 +37,7 @@ const Footer = () =>{
           <h2>Reach out to us</h2>
           <div className='social-icons'>
           <Link to='https://www.linkedin.com/in/abhimanyu-kumar-4b6716242'>
-          <FaSquareInstagram id='insta-logo'/>
+          <FaInstagram id='insta-logo'/>
             </Link>
           
             <Link to='https://www.linkedin.com/in/abhimanyu-kumar-4b6716242'>
