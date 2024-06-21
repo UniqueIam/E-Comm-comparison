@@ -32,7 +32,7 @@ const Cart = () => {
     </div>
     
     <div className='price-details'>
-      <h2 id='price-detail-heading'>Price Details</h2>
+      <h2 id='price-detail-heading'>Price Details of the cart Items</h2>
     </div>
     </div>
     </>
