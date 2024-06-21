@@ -6,18 +6,12 @@ import { FaClock,FaPiggyBank,FaSmile } from 'react-icons/fa';
 import { MdUpdate } from 'react-icons/md';
 
 
-function Home({match}) {
-  const alert=useAlert();
-  const dispatch=useDispatch();
-  const {loading,products,error}=useSelector(state=>state.products)
-  const keyword=match.paras.keyword
+function Home() {
+
   useEffect(()=>{
-    if(error){
-      return alert.error(error)
-    }
-    dispatchEvent(getProducts(keywordcurrentPage));
-  },[dispatch,alert,error,keyword,currentPage]
-  })
+    window.scrollTo(0,0);
+    },[]); 
+
   return (
     <>
     
