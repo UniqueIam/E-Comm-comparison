@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useReducer } from 'react';
-import './Singleproduct.css'
+import './singleproduct.css'
 import Stars from '../Stars';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
@@ -36,6 +36,12 @@ const initialState = {
 };
 
 function SingleProductPage() {
+  
+
+
+
+
+
   const { id,category } = useParams();
   console.log("Id of the product is",id);
   console.log("The category of the product is:",category);

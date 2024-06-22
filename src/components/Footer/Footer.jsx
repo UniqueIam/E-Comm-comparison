@@ -49,7 +49,7 @@ const Footer = () =>{
             </Link>
 
             <Link to='https://www.linkedin.com/in/abhimanyu-kumar-4b6716242'>
-            <FaSquareTwitter />
+            <FaSquareTwitter id='twitter-logo'/>
             </Link>
           
           </div>

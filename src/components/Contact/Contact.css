@@ -9,6 +9,7 @@ body{
     padding: 5% 10%;
     background-color: #000;
     
+
 }
 
 #contact-heading {
@@ -53,7 +54,7 @@ body{
 }
 
 .cont-icon {
-    background-color: #d60c06;
+    background-color: #d60c0c;
     height: 40px;
     width: 40px;
     display: flex;
@@ -77,7 +78,7 @@ body{
 }
 
 #no {
-    color: #d60c06;
+    color: #d60c0c;
 display: inline-flex;
 justify-content:flex-end;
 margin-bottom: 5%;
@@ -121,7 +122,7 @@ margin-bottom: 5%;
 }
 
 .contact-form button {
-    background-color: #d60c06;
+    background-color: #d60c0c;
     color: #fff;
     width: 120px;
     height: 35px;
