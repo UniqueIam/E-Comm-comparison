@@ -1,19 +1,18 @@
-.cart-portion{
 
+.cart-portion {
   width: 100%;
   height: auto;
-  /* background-color: #fff; */
   display: flex;
   gap: 5%;
 }
 
-.cart-left{
+.cart-left {
   width: 50%;
   margin-top: 20px;
   margin-left: 20px;
   background-color: aliceblue;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column; /* Arrange items in a column */
   gap: 26px;
 }
 
@@ -29,26 +28,30 @@
   background-color: rgb(78, 78, 80);
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column; /* Arrange items in a column */
+  gap: 20px; /* Adds gap between items */
 }
 
 .individual-cart-item {
   display: flex;
-  width: 100%;
+  width: 100%; /* Full width of the container */
   gap: 20px;
   align-items: center;
   border-bottom: 1px solid beige;
   margin-bottom: 20px;
   padding: 10px;
+  box-sizing: border-box; /* Ensures padding is included in the width/height */
 }
 
 .cart-product-image {
-  width: 180px; 
+  width: 180px;
+  height: 180px; /* Fixed height to ensure consistency */
 }
 
 #cart-image {
   width: 100%;
-  height: auto; 
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
   display: block;
 }
 
@@ -57,20 +60,20 @@
 }
 
 .cart-product-description {
-  font-size: 18px; 
-  margin-top: 0; 
+  font-size: 18px;
+  margin-top: 0;
 }
 
 .cart-product-price {
-  font-size: 16px; 
-  margin-top: 10px; 
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 .remove-text {
-  font-size: 16px; 
+  font-size: 16px;
   color: white;
   cursor: pointer;
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
 .remove-text:hover {
@@ -89,13 +92,14 @@
 #price-details-heading {
   text-align: center;
 }
-.price-details{
+
+.price-details {
   background-color: red;
   height: 200px;
   width: 40%;
   margin-top: 20px;
 }
-#price-detail-heading{
-  text-align: center;
 
+#price-detail-heading {
+  text-align: center;
 }

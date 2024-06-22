@@ -119,3 +119,6 @@
     text-transform: uppercase;
     background-color: orangered;
   }
+  #cart-icon{
+    font-size: 20px;
+  }
