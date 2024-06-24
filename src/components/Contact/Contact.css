@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: #000;
@@ -8,8 +8,6 @@ body{
 .contact-portion {
     padding: 5% 10%;
     background-color: #000;
-    
-
 }
 
 #contact-heading {
@@ -23,9 +21,7 @@ body{
     flex-wrap: wrap;
 }
 
-
 .left-portion {
-        
     max-width: 35%;
     position: relative;
     border: 2px solid transparent;
@@ -33,21 +29,19 @@ body{
     background-clip: padding-box;
     border-radius: 45px;
     padding: 2%;
-    transition: all ease 0.5s
+    transition: all ease 0.5s;
+    margin-bottom: 20px; /* Added margin for spacing on smaller screens */
 }
-
 
 .left-portion:hover {
-    margin-top:5px;
+    margin-top: 5px;
     transform: translateY(-10px);
-    box-shadow: 10px 13px 10px -7px rgba(226, 218, 218, 0.1),10px 13px 10px -7px rgba(226, 218, 218, 0.1);
-    cursor:move;
-    /* box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.35); */
+    box-shadow: 10px 13px 10px -7px rgba(226, 218, 218, 0.1), 10px 13px 10px -7px rgba(226, 218, 218, 0.1);
+    cursor: move;
 }
 
-
 .callus {
-    margin-top:5% ;
+    margin-top: 5%;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -74,17 +68,15 @@ body{
 .cont {
     font-size: 16px;
     margin-top: 10px;
-    color:#fff;
+    color: #fff;
 }
 
 #no {
     color: #d60c0c;
-display: inline-flex;
-justify-content:flex-end;
-margin-bottom: 5%;
+    display: inline-flex;
+    justify-content: flex-end;
+    margin-bottom: 5%;
 }
-
-
 
 .contact-form {
     flex: 1;
@@ -100,22 +92,22 @@ margin-bottom: 5%;
 
 .contact-form .first input {
     width: 32%;
-    height:50px;
+    height: 50px;
     padding: 15px;
-    margin: 5px 5px 5px 5px;
+    margin: 5px;
     border: none;
     border-radius: 5px;
-    background-color:#1a171c;
+    background-color: #1a171c;
     color: aliceblue;
 }
 
 .contact-form textarea {
     width: 98%;
     padding: 15px;
-    margin: 5px 5px 5px 5px;
+    margin: 5px;
     border: none;
     border-radius: 5px;
-    background-color:#1a171c;
+    background-color: #1a171c;
     color: aliceblue;
     height: 170px;
     resize: none;
@@ -143,4 +135,69 @@ button:hover {
 }
 
 
+@media (max-width: 1024px) {
+    .contact-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .left-portion, .contact-form {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-portion {
+        padding: 5% 2%;
+    }
+
+    #contact-heading {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .contact-wrap {
+        flex-direction: column;
+    }
+
+    .left-portion, .contact-form {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .contact-form .first input {
+        width: 48%; 
+    }
+
+    .contact-form textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-portion {
+        padding: 5% 1%;
+    }
+
+    #contact-heading {
+        font-size: 24px;
+    }
+
+    .call {
+        font-size: 20px;
+    }
+
+    .cont {
+        font-size: 14px;
+    }
+
+    .contact-form .first input {
+        width: 100%;
+        margin-bottom: 10px; 
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}

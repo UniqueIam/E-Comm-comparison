@@ -1,44 +1,42 @@
-import React, { useEffect, useState } from 'react'
-import './FAQ.css'
+import React, { useEffect, useState } from 'react';
+import './FAQ.css';
 import { questions } from '../faqQuestion';
 
 function FAQ() {
-  const [selected ,setSelected]=useState(null);
-  const toggle=(i)=>{
-    
-      if(selected===i){
-        return setSelected(null) 
-      }
-    setSelected(i)
-  }
+    const [selected, setSelected] = useState(null);
 
-  useEffect(()=>{
-     window.scrollTo(0,0);
-  },[]);
-  
-  return (
-    <>
-    <h2 className='faq-heading'>f<span>a</span>q</h2>
-    <div className='faq-wrap'>
     
-      <div className='accordion'>
-        {questions.map((item,i)=>{
-          return(
-          <div className="item">
-            <div className='title' onClick={()=>toggle(i)}>
-              <h3>{item.question}</h3>
-              <span>{selected===i?"-":"+"}</span>
+    const toggle = (i) => {
+        if (selected === i) {
+            setSelected(null);
+        } else {
+            setSelected(i);
+        }
+    };
+
+    
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    return (
+        <>
+            <h2 className='faq-heading'>f<span>a</span>q</h2>
+            <div className='faq-wrap'>
+                <div className='accordion'>
+                    {questions.map((item, i) => (
+                        <div className='item' key={i}>
+                            <div className='title' onClick={() => toggle(i)}>
+                                <h3>{item.question}</h3>
+                                <span>{selected === i ? ' - ' : ' + '}</span>
+                            </div>
+                            <div className={selected === i ? 'answer show' : 'answer'}>{item.answer}</div>
+                        </div>
+                    ))}
+                </div>
             </div>
-            <div className={selected===i?"answer show":"answer"}>{item.answer}</div>
-          </div>
-          )
-        })}
-      </div>
-    </div>
-  </>      
-  
-  );
+        </>
+    );
 }
 
-export default FAQ
-{/* <h2 id='accordion'>Accordion</h2> */}
+export default FAQ;

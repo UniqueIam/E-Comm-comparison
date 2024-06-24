@@ -1,50 +1,106 @@
-.faq-heading{
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+}
+
+.faq-heading {
     color: aliceblue;
     font-style: normal;
     text-transform: uppercase;
     text-align: center;
     margin-top: 5%;
-    
-    font-size: xx-large;
-
+    font-size: 2rem; 
 }
-.faq-wrap{
+
+
+.faq-wrap {
     background: #000;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -4%;
-    height:100vh
-   
-}
-.accordion{
-    width:55%
+    margin-top: -4%; 
+    min-height: calc(100vh - 100px); 
+    padding: 20px; 
 }
 
-.accordion .item{
+
+.accordion {
+    width: 55%;
+    max-width: 800px; 
+}
+
+
+.accordion .item {
     background-color: #1a171c;
-    margin-bottom: 5px;
-    padding: 10px 20px;
-    border-radius: 5px;
+    margin-bottom: 10px; 
+    padding: 15px 25px; 
+    border-radius: 8px;
 }
 
-.title{
-    color:aliceblue;
+
+.title {
+    color: aliceblue;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    font-size: 1.5rem;
 }
-.answer{
+
+    
+
+.answer {
     color: #8b7f75;
     max-height: 0;
     overflow: hidden;
-    margin-top: 2%;
-    transition: all 0.5s cubic-bezier(0,1,0,1);
+    margin-top: 10px; 
+    transition: max-height 0.3s ease-out;
 }
 
-.answer.show{
-    height:auto;
-    max-height: 9999px;
-    transition: all 0.5s cubic-bezier(1,0,1,0);
+.answer.show {
+    max-height: 1000px;
+    transition: max-height 0.3s ease-in; 
+}
+
+
+@media (max-width: 1024px) {
+    .accordion {
+        width: 70%;
+    }
+}
+
+ @media (max-width: 768px) {
+    .accordion {
+        width: 90%; 
+    }
+    .title{
+        font-size: 1.1rem;
+       
+    }
+    
+} 
+
+@media (max-width: 480px) {
+    .faq-heading {
+        font-size: 1.5rem; 
+    }
+
+    .faq-wrap {
+        padding: 30px; 
+    }
+
+    .accordion .item {
+        padding: 12px 20px;
+    }
+
+    .title {
+        font-size: 0.9rem; 
+    }
+
+    .answer {
+        margin-top: 8px; 
+    }
 }
