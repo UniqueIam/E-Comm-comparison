@@ -1,46 +1,55 @@
-.signup-portion{
-    position:relative;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+}
+
+.signup-portion {
+    position: relative;
     width: 100%;
-    height: 140%;
+    height: auto; 
     top: 7%;
     background: #000;
     overflow: hidden;
-    
 }
-.signpg{
+
+.signpg {
     display: flex;
+    flex-wrap: wrap; 
     margin-top: 3%;
     margin-left: 5%;
     margin-bottom: 5%;
+    justify-content: center; 
 }
 
-
-.cart-img{
- position: relative;
- top:100px;
- left: 60px;
+.cart-img {
+    position: relative;
+    top: 100px;
+    left: 60px;
 }
 
-#cartImage{
-    width:65%;
-    
+#cartImage {
+    width: 65%;
 }
 
-.account-section-signUp{
-    
-    margin-left:5%;
-    margin-top: 10%;
+.account-section-signUp {
+    margin-left: 5%;
+    margin-top: 0%;
     font-family: sans-serif;
     color: #fff;
+    max-width: 400px;
 }
-span{
-    color:#d60c0c;
+
+span {
+    color: #d60c0c;
 }
-.details{
+
+.details {
     font-size: 12px;
-    
 }
-#email-field,#name-field,#password-field{
+
+#email-field, #name-field, #password-field {
     background: transparent;
     height: 28px;
     width: 300px;
@@ -48,28 +57,30 @@ span{
     outline: none;
     color: #fff;
     font-size: 14px;
-  }
+}
 
-  #account{
+#account {
     background-color: #d60c0c;
     border: none;
     width: 170px;
     height: 40px;
     cursor: pointer;
     color: #fff;
+    margin-top: 20px; 
 }
+
 #account:hover {
     background-color: #a00a04;
 }
-.account-already-exist{
+
+.account-already-exist {
     background-color: #fff;
     height: 30px;
     width: 400px;
+    margin-top: 20px;
 }
 
-#signup-google{
-    
-    left: 12px;
+#signup-google {
     background: transparent;
     border: none;
     color: #fff;
@@ -78,17 +89,129 @@ span{
     display: flex;
     gap: 10px;
     width: 200px;
-}
-#google-icon{
-    margin-top: 1.3px;  
+    align-items: center;
+    margin-top: 20px; 
 }
 
-#login-link{
+#google-icon {
+    margin-top: 1.3px;
+}
+
+#login-link {
     text-decoration: none;
     color: #967c7c;
     text-decoration: underline;
-    
+}
+
+
+@media (max-width: 1024px) {
+    .signpg {
+        margin-left: 3%;
+        
+    }
+
+    .cart-img {
+        top: 50px;
+        left: 30px;
+    }
+
+    #cartImage {
+        width: 80%;
+    }
+
+    .account-section-signUp {
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+
+    #email-field, #name-field, #password-field {
+        width: 80%;
+    }
+
+    #account {
+        width: 60%;
+    }
+
+    .account-already-exist {
+        width: 80%;
+    }
+
+    #signup-google {
+        width: 80%;
+    }
 }
  
+@media (max-width: 768px) {
+    .signpg {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
 
+    .cart-img {
+        top: 20px;
+        left: 0;
+        text-align: center; 
+    }
 
+    #cartImage {
+        width: 90%;
+        margin: 0 auto; 
+    }
+
+    .account-section-signUp {
+        margin-left: 0;
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    #email-field, #name-field, #password-field {
+        width: 100%;
+    }
+
+    #account {
+        width: 100%;
+    }
+
+    .account-already-exist {
+        width: 100%;
+    }
+
+    #signup-google {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cart-img {
+        top: 10px;
+    }
+
+    #cartImage {
+        width: 100%;
+    }
+
+    .account-section-signUp {
+        margin-top: 2%;
+    }
+
+    #email-field, #name-field, #password-field {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    #account {
+        height: 50px;
+    }
+
+    .account-already-exist {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    #signup-google {
+        font-size: 16px;
+    }
+}

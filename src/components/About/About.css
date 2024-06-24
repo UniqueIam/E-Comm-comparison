@@ -23,12 +23,12 @@ h1,h2{
 }
 .storybx{
     width:42%;
-    margin-right: 7%;
+    margin-right: 5%;
     font-size: 16px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .aboutimg{
-  width:45%
+  width:50%
 }
 .secondhalf{
   display: block;
@@ -82,7 +82,7 @@ h1,h2{
   
   .sru {
     background-image: url(../../../public/images/sruti2.jpg);
-    background-size:auto 108%; /* Increase the height to 250%, width auto to maintain aspect ratio */
+    background-size:auto 108%; 
     background-position:48% -10%;
     background-repeat: no-repeat;
     -webkit-mask:url("../../../public/images/g2.png");
@@ -197,4 +197,104 @@ text-shadow: 0px 0px 4px rgba(221, 25, 25, 0.25), 0px 0px 8px rgba(240, 22, 22, 
 
  }
 
- 
+
+
+
+ @media (max-width: 1024px) {
+    .cover {
+        grid-template-columns: 1fr; 
+        row-gap: 30px; 
+    }
+
+    .lasthalf {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .leftpor, .rightpor {
+        width: 100%;
+    }
+
+    .rightpor {
+        margin-left: 0;
+         
+    }
+}
+
+
+ @media (max-width: 768px) {
+    .firsthalf {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .storybx, .aboutimg {
+        width: 90%; 
+        margin: 0; 
+    }
+
+    .descr {
+        left: 0;
+        top: 0; 
+        width: 100%; 
+    }
+
+    .why {
+        font-size: 35px; 
+    }
+
+    .joy {
+        font-size: 40px;
+        line-height: 60px; 
+    }
+
+    .icon {
+        width: 50px; 
+        height: 50px; 
+        font-size: 30px; 
+    }
+    
+    .descr{
+        width:50%;
+        margin-left:25% ;
+
+    }
+    .aboutimg{
+        margin-top: 5%;
+    }
+    
+    h3 {
+        font-size: 14px;
+    }
+
+    .fea-p {
+        font-size: 13px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .why {
+        font-size: 28px; 
+    }
+
+    .joy {
+        font-size: 32px;
+        line-height: 48px; 
+    }
+
+    
+    .icon {
+        width: 40px; 
+        height: 40px; 
+        font-size: 24px
+    }
+
+    
+    h3 {
+        font-size: 12px;
+    }
+
+    .fea-p {
+        font-size: 11px; 
+    }
+}

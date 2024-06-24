@@ -1,19 +1,32 @@
 
 .cart-portion {
-  width: 100%;
-  height: auto;
+  width: 90%;
+  height: 100vh;
+
   display: flex;
   gap: 5%;
+  justify-content: center;
+  
+  /* Hide scrollbars */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+.cart-portion::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 .cart-left {
-  width: 50%;
-  margin-top: 20px;
-  margin-left: 20px;
-  background-color: aliceblue;
+  width: 80%;
+  margin-top: 10%;
+  margin-left: 10%;
+
   display: flex;
   flex-direction: column; /* Arrange items in a column */
   gap: 26px;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 #empty-cart {
@@ -21,12 +34,12 @@
   text-align: center;
   font-weight: 800;
   font-family: sans-serif;
-  color: red;
+  color: #d60c0c;
+  width: 100%;
 }
 
 .cart-items {
-  background-color: rgb(78, 78, 80);
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column; /* Arrange items in a column */
   gap: 20px; /* Adds gap between items */
@@ -45,18 +58,20 @@
 
 .cart-product-image {
   width: 180px;
-  height: 180px; /* Fixed height to ensure consistency */
+
 }
 
 #cart-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image covers the area without distortion */
+
+  height: auto;
+
   display: block;
 }
 
 .cart-product-details {
   flex-grow: 1;
+  color: aliceblue;
 }
 
 .cart-product-description {
@@ -65,19 +80,28 @@
 }
 
 .cart-product-price {
-  font-size: 16px;
+
+  font-size: 20px;
   margin-top: 10px;
+  color: #d60c0c;
 }
 
-.remove-text {
+.remove {
   font-size: 16px;
-  color: white;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 10%;
+  
+  background-color: #d60c0c;
+  color: #fff;
+  width: 120px;
+  height: 35px;
+
 }
 
-.remove-text:hover {
-  color: red;
+.remove:hover {
+  background-color: #a00a04;
 }
 
 .underline-cart-page {
@@ -85,21 +109,35 @@
 }
 
 .price-details {
-  background-color: wheat;
+  border: 1px solid aliceblue;
   width: 30%;
-}
-
-#price-details-heading {
-  text-align: center;
-}
-
-.price-details {
-  background-color: red;
-  height: 200px;
-  width: 40%;
-  margin-top: 20px;
+  padding: 2%;
+  height: fit-content;
+  margin-top: 10%;
 }
 
 #price-detail-heading {
   text-align: center;
+  color: aliceblue;
+}
+
+
+@media (max-width: 768px) {
+  .cart-portion {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cart-left, .price-details {
+    width: 80%;
+  }
+
+  .cart-product-image {
+    width: 100px;
+  }
+
+  #empty-cart {
+    font-size: 30px;
+  }
+
 }
