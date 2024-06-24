@@ -6,6 +6,8 @@ import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import { FaShoppingCart } from "react-icons/fa";
 import { useCartContext } from '../../context/CartContext';
+import CartAmountToggle from '../CartAmountToggle';
+import FavoriteIcon from '../FavouriteIcon';
 
 
 const reducer = (state,action) =>{
@@ -103,44 +105,53 @@ function SingleProductPage() {
        
       <div className='single-product-page-details'>
         <h2 id='single-product-name'>{product.title}</h2>
-        <p id='star'>star</p><br/>
-        <p>{product.single_page_description}</p>
-        <p>{product.price}</p>
-        <Stars stars={product.stars}/>
+        <Stars stars={product.stars} id='ratings'/>
+        <p id='prod-description'>{product.single_page_description}</p>
+        <p id='price'>{product.price}</p>
+        
+
+        <div id='quantity'><CartAmountToggle />
+            <div id='like'><FavoriteIcon /></div>
+        </div>
+
+        
+        
+        
         <Link to='https://www.amazon.in/Fire-Boltt-Bluetooth-Calling-Assistance-Resolution/dp/B0BF57RN3K/ref=sr_1_7?crid=354ZAD850V6IC&dib=eyJ2IjoiMSJ9.1ziruIke18LfDZManf-o-OebEm1M_zH4mISKMdHRmGaZmY8nDNfzQGIn1aVs6PNrYpb7D3hb_QIIhozIJePhx2DvJANeusR16W_AgjLKql37VRJMuQyPRKTxfxGVMQZbfM4sS4oTMh4keSyYnzWip0opUGPmyAm4ivcORXRB-tQLYAiH7eM4L-Uc2bvgtfUE6xsV8xlzzg8J97quTxSF6cUCzf-Q1mFo-x-QU2QZBVBlqO2APJAXbYQfpxMpOG-NFF5uNdWNKhyp5_-IjvsnXeMByyRho5lOte1fhXs0Zvc.Ird4yMuRVuR9CIkciCjBWVxMvH0ScoxgrTkHau8oLcI&dib_tag=se&keywords=watches&qid=1718786531&sprefix=watches%2Caps%2C639&sr=8-7'>
-          <p>Buy Now</p>
-        </Link>
+           <button id='buy-now'>Buy Now</button>
+         </Link>
     </div>
     </div>
 
     <p id='comparison'>Comparison</p>
     <div className='single-product-comparison'>
       <div className='amazon-price'>
-         <h2 id='amazon-heading'>Amazon</h2>
-         <p id='price'>Price :-<span id='price-color'> {product.price}</span></p><br/>  
-         <p id='ratings'>Rating :- <span id='rating-color'> <Stars stars={product.stars}/> </span></p><br/>
-         <Link to='/cart'
-         onClick={() => cartProducts({ id: product.id, price: product.price,product })}         >
-         <button 
-         id='add-to-cart' 
-         
-         >
-         <FaShoppingCart id='cart-icon' />
-         Add To Cart
-         </button>
-         </Link><br/><br/>
-         <Link >
-         <button id='buy-now'>Buy Now</button>
-         </Link>
-      </div>
+        <p id='amazon-heading'>Amazon</p>
+            
+            <p id='price'><span id='price-color'> {product.price}</span></p><br/>  
+            <p id='ratings'> <span id='rating-color'> <Stars stars={product.stars}/> </span></p><br/>
+            <Link to='/cart'
+            onClick={() => cartProducts({ id: product.id, price: product.price,product })}         >
+            
+            
+            <button 
+                   id='add-to-cart'><FaShoppingCart id='cart-icon' />
+              Add To Cart
+            </button>
+            </Link><br/><br/>
+            <Link >
+            <button id='buy-now'>Buy Now</button>
+            </Link>
+          </div>
+      
       <div className='flipkart-price'> 
-      <h2 id='flipkart-heading'>Flipkart</h2>
+      <p id='flipkart-heading'>Flipkart</p>
       </div>
       <div className='meesho-price'>
-      <h2 id='meesho-heading'>Meesho</h2>
+      <p id='meesho-heading'>Meesho</p>
       </div>
       <div className='myntra-price'>
-      <h2 id='myntra-heading'>myntra</h2>
+      <p id='myntra-heading'>myntra</p>
       </div>
     </div>
 

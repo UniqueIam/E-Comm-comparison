@@ -1,27 +1,135 @@
-.login-portion{
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+}
+
+.login-portion {
     position: relative;
     top: 7%;
-    height: 140%;
     width: 100%;
+    height: auto;
     background: #000;
     overflow: hidden;
 }
-.account-section-login{
-    margin-left:5%;
-    margin-top: 10%;
+
+.signpg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+#cartImage {
+    width: 65%;
+}
+
+.account-section-login {
+    margin-left: 5%;
+
     font-family: sans-serif;
     color: #fff;
+    max-width: 400px;
 }
-#login-btn{
 
-    width: 90px;
+#email-field, #password-field {
+    background: transparent;
+    height: 28px;
+    width: 300px;
+    border-bottom: 2px solid rgb(87, 74, 74);
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+#login-btn {
+    border: none;
+    width: 190px;
     height: 35px;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 20px;
+
+}
+
+#forgot-pass {
+    position: relative;
+    top: -18px;
+    left: 165px;
+    color: #d60c0c;
     cursor: pointer;
 }
 
-#forgot-pass{
-    position: relative;
-    top: -24px;
-    left: 165px;
-    color: #d60c0c;
+@media (max-width: 1024px) {
+    .account-section-login {
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+
+    #email-field,
+    #password-field {
+        width: 80%;
+    }
+
+    #login-btn {
+        width: 60%;
+    }
+
+  
 }
+
+@media (max-width: 768px) {
+    .signpg {
+        width: 90%;
+        gap: 5%;
+    }
+
+    #cartImage {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .account-section-login {
+        margin-left: 0;
+        margin-top: 5%;
+        width: 90%;
+    }
+
+    #email-field,
+    #password-field {
+        width: 100%;
+    }
+
+    #login-btn {
+        width: 100%;
+    }
+
+    #forgot-pass {
+        left:65%
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .account-section-login {
+        margin-top: 2%;
+    }
+
+    #email-field,
+    #password-field {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    #login-btn {
+        height: 50px;
+    }
+
+    
+}
+
+

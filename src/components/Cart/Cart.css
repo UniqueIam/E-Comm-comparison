@@ -1,20 +1,28 @@
-.cart-portion{
-
-  width: 100%;
-  height: auto;
-  /* background-color: #fff; */
+.cart-portion {
+  width: 90%;
+  height: 100vh;
   display: flex;
   gap: 5%;
+  justify-content: center;
+  
+  /* Hide scrollbars */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
-.cart-left{
-  width: 50%;
-  margin-top: 20px;
-  margin-left: 20px;
-  background-color: aliceblue;
+.cart-portion::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.cart-left {
+  width: 80%;
+  margin-top: 10%;
+  margin-left: 10%;
   display: flex;
   flex-wrap: wrap;
   gap: 26px;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 #empty-cart {
@@ -22,12 +30,12 @@
   text-align: center;
   font-weight: 800;
   font-family: sans-serif;
-  color: red;
+  color: #d60c0c;
+  width: 100%;
 }
 
 .cart-items {
-  background-color: rgb(78, 78, 80);
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -43,38 +51,46 @@
 }
 
 .cart-product-image {
-  width: 180px; 
+  width: 180px;
 }
 
 #cart-image {
   width: 100%;
-  height: auto; 
+  height: auto;
   display: block;
 }
 
 .cart-product-details {
   flex-grow: 1;
+  color: aliceblue;
 }
 
 .cart-product-description {
-  font-size: 18px; 
-  margin-top: 0; 
+  font-size: 18px;
+  margin-top: 0;
 }
 
 .cart-product-price {
-  font-size: 16px; 
-  margin-top: 10px; 
+  font-size: 20px;
+  margin-top: 10px;
+  color: #d60c0c;
 }
 
-.remove-text {
-  font-size: 16px; 
-  color: white;
+.remove {
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px; 
+  margin-top: 10%;
+  
+  background-color: #d60c0c;
+  color: #fff;
+  width: 120px;
+  height: 35px;
 }
 
-.remove-text:hover {
-  color: red;
+.remove:hover {
+  background-color: #a00a04;
 }
 
 .underline-cart-page {
@@ -82,20 +98,34 @@
 }
 
 .price-details {
-  background-color: wheat;
+  border: 1px solid aliceblue;
   width: 30%;
+  padding: 2%;
+  height: fit-content;
+  margin-top: 10%;
 }
 
-#price-details-heading {
+#price-detail-heading {
   text-align: center;
+  color: aliceblue;
 }
-.price-details{
-  background-color: red;
-  height: 200px;
-  width: 40%;
-  margin-top: 20px;
-}
-#price-detail-heading{
-  text-align: center;
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cart-portion {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cart-left, .price-details {
+    width: 80%;
+  }
+
+  .cart-product-image {
+    width: 100px;
+  }
+
+  #empty-cart {
+    font-size: 30px;
+  }
 }
